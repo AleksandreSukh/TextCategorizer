@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7900035A-6B9F-4B07-84E0-71B5134406BD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TextAnalyser</RootNamespace>
+    <AssemblyName>TextAnalyser</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GeorgianLanguageClasses">
+      <HintPath>..\..\..\..\Dlls\GeoWord\GeorgianLanguageClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word">
+      <HintPath>..\Lib\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="office">
+      <HintPath>..\Lib\office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Lib\stdole.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CategorisedText.cs">
+      <DependentUpon>TextDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChainFeeder.cs" />
+    <Compile Include="ChainSimilarityEvaluator.cs" />
+    <Compile Include="FilteredText.cs">
+      <DependentUpon>TextDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefinedMarkovChain.cs" />
+    <Compile Include="TextCategory.cs" />
+    <Compile Include="TextCategoryEvaluatorEntry.cs" />
+    <Compile Include="TextDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TextDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TextDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TextMarkovChain.cs" />
+    <Compile Include="WordDocParser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="DocumentSources\ეკონომომიკა\ekonomika.pdf" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_1.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_10.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_11.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_12.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_13.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_14.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_15.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_16.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_17.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_18.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_19.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_2.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_20.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_21.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_3.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_4.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_5.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_6.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_7.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_8.docx" />
+    <None Include="DocumentSources\ეკონომომიკა\ეკ_9.docx" />
+    <None Include="DocumentSources\მედიცინა\მასალები_მისამართი.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_1.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_10.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_11.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_12.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_13.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_14.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_15.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_16.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_18.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_19.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_2.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_20.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_3.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_4.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_5.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_6.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_7.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_8.docx" />
+    <None Include="DocumentSources\მედიცინა\მედ_9.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_1.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_10.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_11.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_12.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_13.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_14.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_15.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_16.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_17.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_18.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_19.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_2.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_20.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_21.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_3.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_4.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_5.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_6.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_7.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_8.docx" />
+    <None Include="DocumentSources\სამართალი\სამ_9.docx" />
+    <None Include="Lib\Microsoft.Office.Interop.Word.dll.reg" />
+    <None Include="Lib\office.dll.reg" />
+    <None Include="Lib\stdole.dll.reg" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="TextDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TextDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="TextDataModel.edmx.diagram">
+      <DependentUpon>TextDataModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\GeorgianLanguageClasses.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\Microsoft.Office.Interop.Word.dll" />
+    <Content Include="Lib\office.dll" />
+    <Content Include="Lib\stdole.dll" />
+    <Content Include="TextDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TextDataModel.edmx</DependentUpon>
+      <LastGenOutput>TextDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="TextDataModel.edmx.sql" />
+    <Content Include="TextDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TextDataModel.edmx</DependentUpon>
+      <LastGenOutput>TextDataModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="XmlSources\chainEconomics.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlSources\chainLaw.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlSources\chainMedical.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StemmerWrap\StemmerWrap.csproj">
+      <Project>{26e30226-560c-49a0-950d-1557968d5ffd}</Project>
+      <Name>StemmerWrap</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
