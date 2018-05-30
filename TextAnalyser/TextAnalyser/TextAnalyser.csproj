@@ -210,12 +210,11 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StemmerWrap\StemmerWrap.csproj">
-      <Project>{26e30226-560c-49a0-950d-1557968d5ffd}</Project>
-      <Name>StemmerWrap</Name>
+    <ProjectReference Include="..\Stemmer\Stemmer.csproj">
+      <Project>{a262cd9c-b487-4a71-8964-d7e5e6d1da1e}</Project>
+      <Name>Stemmer</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

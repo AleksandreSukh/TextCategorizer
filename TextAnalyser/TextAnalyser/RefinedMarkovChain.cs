@@ -1,11 +1,13 @@
 ﻿using System.Linq;
 using GeorgianLanguageClasses;
+using Stemmer;
 
 namespace TextAnalyser
 {
     //ტექსტის ჯაჭვი რომელსაც დავუმატეთ სიტყვების გაფილტვრის ფუნქცია 
     public class RefinedMarkovChain : TextMarkovChain
     {
+        readonly StemmerGeo stemmer = new StemmerGeo();
         //კავშირები რომლებიც გვინდა გავფილტროთ სანამ დავამატებთ ჯაჭვში
         static readonly string[] Kavshirebi = new string[] {
             "და","რომ", "თუ", "არა", "რათა", "რაკი"
@@ -30,7 +32,7 @@ namespace TextAnalyser
             //&& !s.Contains('-')
             );
             
-            var stemmed = StemmerWrap.StemmerWrapper.Stem(filtered.ToArray());//ფუძეების ამოკრება
+            var stemmed = stemmer.Lemmatize(filtered.ToArray());//ფუძეების ამოკრება
             return stemmed.Where(s => !string.IsNullOrEmpty(s)).ToArray();//გამოვრიცხეთ რომ ფუძის ამოღების შემდეგ არ გვაქვს ცარიელი ტექსტები
         }
     }
