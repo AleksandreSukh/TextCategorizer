@@ -3,6 +3,7 @@ using Directory = Pri.LongPath.Directory;
 using FileSystemInfo = Pri.LongPath.FileSystemInfo;
 using System.Text;
 using System.Threading.Tasks;
+using GeorgianWordDetector;
 
 namespace DataAggregator
 {
@@ -10,6 +11,7 @@ namespace DataAggregator
     {
         static void Main(string[] args)
         {
+            //new WordsDetector();
             string inputDir = @"C:\Users\sandro\Downloads\წიგნები-20180531T092702Z-002";
             string output;
 
@@ -30,8 +32,8 @@ namespace DataAggregator
                 Directory.CreateDirectory(output);
 
             //Recursively scrap files from dirs
-            IoExtensions.AggregateFilesInDirRecursively(inputDir, output, true,
-                    (inputFile, outputFile, updateMode) => FileScraper.ScrapFile(inputFile, outputFile, updateMode));
+            //IoExtensions.AggregateFilesInDirRecursively(inputDir, output, true,
+            //        (inputFile, outputFile, updateMode) => FileScraper.ScrapFile(inputFile, outputFile, updateMode));
 
             inputDir = output;
             output += "_clean";

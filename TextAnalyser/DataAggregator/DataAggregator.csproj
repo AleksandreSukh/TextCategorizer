@@ -72,6 +72,10 @@
       <Project>{A7F77740-7B67-43F9-B1D5-F3CBA4644F3D}</Project>
       <Name>GeorgianLanguageClasses</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GeorgianWordDetector\GeorgianWordDetector.csproj">
+      <Project>{20AE6D79-A985-46A6-8B95-F829D8C009D4}</Project>
+      <Name>GeorgianWordDetector</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

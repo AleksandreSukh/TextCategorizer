@@ -54,7 +54,7 @@ namespace GeorgianLanguageClasses
                     latinWord[i] = GeorgianAlphabet.Alpabet[GeorgianAlphabet.AlpabetLat.IndexOf(current)];
             }
 
-            return latinWord.ToString();
+            return  new string(latinWord);
         }
 
         static bool IncludesThreeSameConsonantsFollowing(string word)
