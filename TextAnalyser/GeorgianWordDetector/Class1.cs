@@ -37,7 +37,8 @@ namespace GeorgianWordDetector
 
             var similarity = new ChainSimilarityEvaluator().EvaluateSimilarity(chain, chainInitial);
             return similarity > 4;
-            არაქართული მოდელიც გვჭირდეა
+            //todo არაქართული მოდელიც გვჭირდეა
+            throw new NotImplementedException();
 
         }
     }

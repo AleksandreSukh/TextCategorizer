@@ -4,6 +4,7 @@ using FileSystemInfo = Pri.LongPath.FileSystemInfo;
 using System.Text;
 using System.Threading.Tasks;
 using GeorgianWordDetector;
+using Pri.LongPath;
 
 namespace DataAggregator
 {
@@ -36,6 +37,12 @@ namespace DataAggregator
             //        (inputFile, outputFile, updateMode) => FileScraper.ScrapFile(inputFile, outputFile, updateMode));
 
             inputDir = output;
+            output += "_";
+
+            IoExtensions.AggregateFilesInDirRecursively(inputDir, output, true,
+                    (inputFile, outputFile, updateMode) => SpaceRemover.Clean(inputFile, outputFile, updateMode));
+
+            inputDir = output;
             output += "_clean";
 
             IoExtensions.AggregateFilesInDirRecursively(inputDir, output, true,
@@ -44,5 +51,15 @@ namespace DataAggregator
         }
 
 
+    }
+
+    internal class SpaceRemover
+    {
+        public static void Clean(FileInfo inputFile, string outputFile, bool updateMode)
+        {
+            var oldText = File.ReadAllText(inputFile.FullName);
+            var newText = System.Text.RegularExpressions.Regex.Replace(oldText, @"\s+", " ");
+            File.WriteAllText(outputFile, newText);
+        }
     }
 }
