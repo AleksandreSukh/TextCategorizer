@@ -23,9 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordTextExtractor", "WordTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAggregator", "DataAggregator\DataAggregator.csproj", "{0F8AFDE6-D3EE-4EA3-BF75-43F2684A8B7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeorgianLanguageClasses", "..\..\GeorgianRhyme\GeorgianLanguageClasses\GeorgianLanguageClasses.csproj", "{A7F77740-7B67-43F9-B1D5-F3CBA4644F3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeorgianLanguageClasses", "GeorgianLanguageClasses\GeorgianLanguageClasses.csproj", "{A7F77740-7B67-43F9-B1D5-F3CBA4644F3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeorgianLanguageClassesTests", "..\..\GeorgianRhyme\GeorgianLanguageClassesTests\GeorgianLanguageClassesTests.csproj", "{034C5A75-8CC1-4BF5-B3A5-76F80D568359}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeorgianLanguageClassesTests", "GeorgianLanguageClassesTests\GeorgianLanguageClassesTests.csproj", "{034C5A75-8CC1-4BF5-B3A5-76F80D568359}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

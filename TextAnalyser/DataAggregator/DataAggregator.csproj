@@ -68,7 +68,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\GeorgianRhyme\GeorgianLanguageClasses\GeorgianLanguageClasses.csproj">
+    <ProjectReference Include="..\GeorgianLanguageClasses\GeorgianLanguageClasses.csproj">
       <Project>{A7F77740-7B67-43F9-B1D5-F3CBA4644F3D}</Project>
       <Name>GeorgianLanguageClasses</Name>
     </ProjectReference>
