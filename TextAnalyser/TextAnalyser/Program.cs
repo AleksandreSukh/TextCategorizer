@@ -6,11 +6,11 @@
         {
 
             //--ტექსტის დაპარსვა ვორდიდან და ბაზაში შენახვა
-            //var parser = new WordDocParser();
+            var parser = new WordDocParser();
 
-            //parser.ParseCategorisedWordFilesFromDirectory(@"E:\Proeqti\texts\ეკონომომიკა", TextCategory.Economics);
-            //parser.ParseCategorisedWordFilesFromDirectory(@"E:\Proeqti\texts\მედიცინა", TextCategory.Medical);
-            //parser.ParseCategorisedWordFilesFromDirectory(@"E:\Proeqti\texts\სამართალი", TextCategory.Law);
+            parser.ParseCategorisedWordFilesFromDirectory(@"E:\Proeqti\texts\ეკონომომიკა", TextCategory.Economics);
+            parser.ParseCategorisedWordFilesFromDirectory(@"E:\Proeqti\texts\მედიცინა", TextCategory.Medical);
+            parser.ParseCategorisedWordFilesFromDirectory(@"E:\Proeqti\texts\სამართალი", TextCategory.Law);
 
             //--ცარიელი კატეგორიზებული მარკოვის ჯაჭვების შექმნა
             var chainEconomics = new RefinedMarkovChain() { Category = TextCategory.Economics };
