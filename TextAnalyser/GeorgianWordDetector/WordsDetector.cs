@@ -41,7 +41,7 @@ namespace GeorgianWordDetector
 
         public bool LooksMoraLikeGeorgianWordThanEnglish(string initial)
         {
-            var initialToGeo = LatinToGeorgian(initial);
+            var initialToGeo = initial.LatinToGeorgian();
 
             var chainInitial = new TextMarkovChain();
             chainInitial.Feed(string.Join(" ", initial.ToCharArray()) + ".");
@@ -55,20 +55,9 @@ namespace GeorgianWordDetector
             var similarityToGeorgian = new ChainSimilarityEvaluator().EvaluateSimilarity(georgianWordModelChain, chainInitialGeo);
             var similarityToEnglish = new ChainSimilarityEvaluator().EvaluateSimilarity(englistWordModelChain, chainInitial);
 
-            return similarityToGeorgian > similarityToEnglish; //TODO: ეს საიდან მოვიტანე?
+            return similarityToGeorgian > similarityToEnglish; 
         }
-        public static string LatinToGeorgian(string input)
-        {
-            var latinWord = input.ToCharArray();
-            for (int i = 0; i < latinWord.Length; i++)
-            {
-                var current = latinWord[i];
-                if (GeorgianAlphabet.AlpabetLat.Contains(current))
-                    latinWord[i] = GeorgianAlphabet.Alpabet[GeorgianAlphabet.AlpabetLat.IndexOf(current)];
-            }
-
-            return new string(latinWord);
-        }
+        
 
         private TextMarkovChain LoadWordModelChain(string modelFileName)
         {

@@ -44,6 +44,19 @@ namespace GeorgianLanguageClasses
                 && !IncludesFourSameVowelsFollowing(word);
         }
 
+        public static string LatinToGeorgian(this string input)
+        {
+            var latinWord = input.ToCharArray();
+            for (int i = 0; i < latinWord.Length; i++)
+            {
+                var current = latinWord[i];
+                if (GeorgianAlphabet.AlpabetLat.Contains(current))
+                    latinWord[i] = GeorgianAlphabet.Alpabet[GeorgianAlphabet.AlpabetLat.IndexOf(current)];
+            }
+
+            return new string(latinWord);
+        }
+
         static bool IncludesThreeSameConsonantsFollowing(string word)
         {
             if (word.Length <= 3) return false;

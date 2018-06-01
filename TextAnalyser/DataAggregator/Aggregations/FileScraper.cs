@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using Microsoft.Office.Interop.Word;
 using PdfiumViewer;
@@ -20,7 +21,7 @@ namespace DataAggregator
             outputFilePath += OutputFileExtension;
             if (updateMode && File.Exists(outputFilePath))
             {
-                Console.WriteLine($"Skipping:{inputFilePath} because already scraped {outputFilePath}");
+                Console.WriteLine($"{nameof(ScrapFile)} Skipping:{inputFilePath} because already scraped {outputFilePath}");
                 return;
             }
 
@@ -57,7 +58,7 @@ namespace DataAggregator
             if (Path.GetFileName(fullName).StartsWith("~$")) return false;
 
             var word = new Application();
-            var docs = word.Documents.Open(fullName);
+            var docs = word.Documents.Open(fullName, ReadOnly: true);
             var totaltext = "";
             for (var i = 0; i < docs.Paragraphs.Count; i++)
             {

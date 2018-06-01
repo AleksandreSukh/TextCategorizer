@@ -57,11 +57,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileScraper.cs" />
+    <Compile Include="Aggregations\FileScraper.cs" />
+    <Compile Include="Aggregations\GerogianTextModelUpdater.cs" />
     <Compile Include="IoExtensions.cs" />
-    <Compile Include="LatinGeoFixer.cs" />
+    <Compile Include="Aggregations\LatinGeoFixer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Aggregations\SpaceRemover.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -75,6 +77,10 @@
     <ProjectReference Include="..\GeorgianWordDetector\GeorgianWordDetector.csproj">
       <Project>{20AE6D79-A985-46A6-8B95-F829D8C009D4}</Project>
       <Name>GeorgianWordDetector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LanguageModelAdapter\LanguageModelAdapter.csproj">
+      <Project>{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}</Project>
+      <Name>LanguageModelAdapter</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

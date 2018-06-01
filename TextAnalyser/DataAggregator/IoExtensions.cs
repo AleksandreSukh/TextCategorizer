@@ -8,8 +8,16 @@ namespace DataAggregator
 {
     public static class IoExtensions
     {
-        public static void AggregateFilesInDirRecursively(string inputDir, string output, bool updateMode, Action<FileInfo, string, bool> InputOutputUpdateMode)
+        public static void AggregateFilesInDirRecursively(string inputDir, Func<string, string> outputNameGenerator, bool updateMode,
+            Action<FileInfo, string, bool> inputOutputUpdateMode)
         {
+            AggregateFilesInDirRecursively(inputDir, outputNameGenerator(inputDir), updateMode, inputOutputUpdateMode);
+        }
+        public static void AggregateFilesInDirRecursively(string inputDir, string output, bool updateMode, Action<FileInfo, string, bool> inputOutputUpdateMode)
+        {
+            if (!Directory.Exists(output))
+                Directory.CreateDirectory(output);
+
             int maxFileNameLength = 50;
             foreach (var inputFilePath in inputDir.ToDirectoryInfo().EnumerateFiles())
             {
@@ -37,7 +45,7 @@ namespace DataAggregator
                 }
 
                 var outputFilePath = Path.Combine(output, inputFileThatMayBeChanged.Name);
-                InputOutputUpdateMode(inputFileThatMayBeChanged, outputFilePath, updateMode);
+                inputOutputUpdateMode(inputFileThatMayBeChanged, outputFilePath, updateMode);
             }
 
             foreach (var inputDirPath in inputDir.ToDirectoryInfo().EnumerateDirectories())
@@ -45,7 +53,7 @@ namespace DataAggregator
                 var outputDirPath = Path.Combine(output, inputDirPath.Name);
                 if (!Directory.Exists(outputDirPath))
                     Directory.CreateDirectory(outputDirPath);
-                AggregateFilesInDirRecursively(inputDirPath.FullName, outputDirPath, updateMode, InputOutputUpdateMode);
+                AggregateFilesInDirRecursively(inputDirPath.FullName, outputDirPath, updateMode, inputOutputUpdateMode);
             }
         }
 

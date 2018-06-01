@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeorgianWordsDataBase", "Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordDetectorTests", "WordDetectorTests\WordDetectorTests.csproj", "{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageModelAdapter", "LanguageModelAdapter\LanguageModelAdapter.csproj", "{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,14 @@ Global
 		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}.Release|x86.ActiveCfg = Release|Any CPU
 		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}.Release|x86.Build.0 = Release|Any CPU
+		{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}.Debug|x86.Build.0 = Debug|Any CPU
+		{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}.Release|x86.ActiveCfg = Release|Any CPU
+		{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -158,6 +168,7 @@ Global
 		{20AE6D79-A985-46A6-8B95-F829D8C009D4} = {6C01E9C1-DB51-4499-9B40-B3349FBFF615}
 		{FCBBD75D-AD7C-4FDD-9AD2-D894ED043DF7} = {6C01E9C1-DB51-4499-9B40-B3349FBFF615}
 		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5} = {6C01E9C1-DB51-4499-9B40-B3349FBFF615}
+		{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0} = {6C01E9C1-DB51-4499-9B40-B3349FBFF615}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9C08206B-C427-4C07-A4F3-0A58CA9D1215}
