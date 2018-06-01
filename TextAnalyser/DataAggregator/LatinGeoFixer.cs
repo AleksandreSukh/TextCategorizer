@@ -8,7 +8,7 @@ namespace DataAggregator
 {
     public static class LatinGeoFixer
     {
-        static WordsDetector wordsDetector = new WordsDetector();
+        static WordDetector _wordDetector = new WordDetector();
         public static void FixLatinCharactersOrSkip(FileInfo inputFile, string outputFile, bool updateMode)
         {
             var textFromFile = File.ReadAllText(inputFile.FullName);
@@ -16,7 +16,7 @@ namespace DataAggregator
             var rnd = new Random();
             var random10Words = wordsFromIt.OrderBy(x => rnd.Next()).Take(10);
             var wordsThatCanBecomeGeorgian =
-                random10Words.Where(w => !w.IsGeorgianWord() && w.LatinToGeorgian().LooksLikeGeorgian());
+                random10Words.Where(w => !w.IsGeorgianWord() && w.LooksLikeGeorgian());
             if (wordsThatCanBecomeGeorgian.Count() > 5)
             {
 
@@ -25,7 +25,7 @@ namespace DataAggregator
 
         public static bool LooksLikeGeorgian(this string s)
         {
-            return wordsDetector.LooksLikeGeorgianWord(s);
+            return _wordDetector.LooksMoraLikeGeorgianWordThanEnglish(s);
         }
     }
 }

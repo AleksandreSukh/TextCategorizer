@@ -27,9 +27,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeorgianLanguageClasses", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeorgianLanguageClassesTests", "GeorgianLanguageClassesTests\GeorgianLanguageClassesTests.csproj", "{034C5A75-8CC1-4BF5-B3A5-76F80D568359}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeorgianWordDetector", "GeorgianWordDetector\GeorgianWordDetector.csproj", "{20AE6D79-A985-46A6-8B95-F829D8C009D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeorgianWordDetector", "GeorgianWordDetector\GeorgianWordDetector.csproj", "{20AE6D79-A985-46A6-8B95-F829D8C009D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeorgianWordsDataBase", "GeorgianWordsDataBase\GeorgianWordsDataBase.csproj", "{FCBBD75D-AD7C-4FDD-9AD2-D894ED043DF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordDetectorTests", "WordDetectorTests\WordDetectorTests.csproj", "{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,14 @@ Global
 		{FCBBD75D-AD7C-4FDD-9AD2-D894ED043DF7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FCBBD75D-AD7C-4FDD-9AD2-D894ED043DF7}.Release|x86.ActiveCfg = Release|Any CPU
 		{FCBBD75D-AD7C-4FDD-9AD2-D894ED043DF7}.Release|x86.Build.0 = Release|Any CPU
+		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}.Debug|x86.Build.0 = Debug|Any CPU
+		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}.Release|x86.ActiveCfg = Release|Any CPU
+		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -147,6 +157,7 @@ Global
 		{034C5A75-8CC1-4BF5-B3A5-76F80D568359} = {6C01E9C1-DB51-4499-9B40-B3349FBFF615}
 		{20AE6D79-A985-46A6-8B95-F829D8C009D4} = {6C01E9C1-DB51-4499-9B40-B3349FBFF615}
 		{FCBBD75D-AD7C-4FDD-9AD2-D894ED043DF7} = {6C01E9C1-DB51-4499-9B40-B3349FBFF615}
+		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5} = {6C01E9C1-DB51-4499-9B40-B3349FBFF615}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9C08206B-C427-4C07-A4F3-0A58CA9D1215}

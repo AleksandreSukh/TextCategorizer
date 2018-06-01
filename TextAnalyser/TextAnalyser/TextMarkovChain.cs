@@ -26,20 +26,22 @@ namespace TextAnalyser
             _head = new Chain("[]");
             _chains.Add("[]", _head);
         }
+        //Just name
+        public string Name { get; set; }
 
 
         //მეთოდი რომელიც შეავსებს ჯაჭვს ტექსტიდან
         public void Feed(string s)
         {
             //სასვენი ნიშნების განცალკევება სიტყვებისგან
-            s = s.ToLower();
+            //s = s.ToLower();
             s = s.Replace('/', ' ').Replace(',', ' ').Replace("[]", "");
             s = s.Replace(".", " .").Replace("!", " !").Replace("?", " ?");
             s = s.Replace("\r\n", " ").Replace('\r', ' ');
             var splitWordsAndPunctuation = s.Split(' ');
             splitWordsAndPunctuation = WordRefinerBeforeAddingToChain(splitWordsAndPunctuation);//სიტყვების გაფილტვრა
 
-            if (splitWordsAndPunctuation.Length==0) return;//ტექსტში ყველა სიტყვა გაიფილტრა
+            if (splitWordsAndPunctuation.Length == 0) return;//ტექსტში ყველა სიტყვა გაიფილტრა
 
             AddWordToTheChainAfterNode("[]", splitWordsAndPunctuation[0]);
 

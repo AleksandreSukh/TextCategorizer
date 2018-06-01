@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GeorgianLanguageClasses\GeorgianLanguageClasses.csproj" />
     <ProjectReference Include="..\GeorgianWordsDataBase\GeorgianWordsDataBase.csproj" />
     <ProjectReference Include="..\TextAnalyser\TextAnalyser.csproj" />
   </ItemGroup>
