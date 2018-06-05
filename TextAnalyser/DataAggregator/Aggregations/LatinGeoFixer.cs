@@ -47,13 +47,13 @@ namespace DataAggregator
             return CheckTextByRandom10Words(text, (string w) => w.IsGeorgianWord());
         }
 
-        public static bool CheckTextByRandom10Words(string text, Func<string, bool> checker)
+        static bool CheckTextByRandom10Words(string text, Func<string, bool> checker)
         {
             var wordsFromIt = text.Split(' ');
 
             var randomWordsToCheck = 10;
             var rnd = new Random();
-            var random10Words = wordsFromIt.OrderBy(x => rnd.Next()).Take(randomWordsToCheck);
+            var random10Words = wordsFromIt.Where(w => w.Length > 5).OrderBy(x => rnd.Next()).Take(randomWordsToCheck);
             var wordsWithCriteria =
                 random10Words.Where(checker);
             return wordsWithCriteria.Count() > randomWordsToCheck / 2;

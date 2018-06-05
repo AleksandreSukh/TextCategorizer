@@ -73,17 +73,27 @@ namespace DataAggregator
 
         private static bool ScrapPdf(string fullName, string outputFilePath)
         {
-            var doc = PdfDocument.Load(fullName);
-            List<string> pageTexts = new List<string>();
-            for (int i = 0; i < doc.PageCount; i++)
+            try
             {
-                var pageText = doc.GetPdfText(i);
-                pageTexts.Add(pageText);
-            }
 
-            var scrapedFilePath = outputFilePath;
-            File.WriteAllLines(scrapedFilePath, pageTexts);
-            return true;
+
+                var doc = PdfDocument.Load(fullName);
+                List<string> pageTexts = new List<string>();
+                for (int i = 0; i < doc.PageCount; i++)
+                {
+                    var pageText = doc.GetPdfText(i);
+                    pageTexts.Add(pageText);
+                }
+
+                var scrapedFilePath = outputFilePath;
+                File.WriteAllLines(scrapedFilePath, pageTexts);
+                return true;
+            }
+            catch (PdfException e)
+            {
+                Console.WriteLine(e);
+                return false;
+            }
         }
     }
 }

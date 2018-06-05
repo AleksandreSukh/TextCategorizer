@@ -19,5 +19,11 @@ namespace WordDetectorTests
             wd.LooksMoraLikeGeorgianWordThanEnglish("testing").ShouldBeFalse();
             wd.LooksMoraLikeGeorgianWordThanEnglish("testireba").ShouldBeTrue();
         }
+
+        [TestMethod]
+        public void TestMethod31()
+        {
+            wd.LooksMoraLikeGeorgianWordThanEnglish("west").ShouldBeTrue();
+        }
     }
 }

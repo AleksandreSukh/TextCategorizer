@@ -22,10 +22,11 @@ namespace LanguageModelAdapter
             }
         }
 
-        public void Feed(string text)
+        public void Feed(string text, bool save)
         {
             _chain.Feed(text);
-            Save();
+            if (save)
+                Save();
         }
 
         void Load()
@@ -35,7 +36,7 @@ namespace LanguageModelAdapter
             _chain.Feed(xmlDocument);
         }
 
-        void Save()
+        public void Save()
         {
             _chain.Save(XmlFileName);
         }

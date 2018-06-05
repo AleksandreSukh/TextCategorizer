@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using GeorgianWordDetector;
+using Pri.LongPath;
 
 namespace DataAggregator
 {
@@ -13,37 +14,42 @@ namespace DataAggregator
     {
         static void Main(string[] args)
         {
+            try
+            {
+
+           
             //new WordsDetector();
-            string inputDir = @"C:\Users\sandro\Downloads\წიგნები1";
-            string output;
+            string inputDir = @"D:\Aleks\DataRepository\წიგნები1";
+            //string output;
 
-            if (args.Length == 2)
-            {
-                inputDir = args[0];
-                output = args[1];
-            }
-            if (args.Length == 1)
-            {
-                inputDir = args[0];
-            }
+            //if (args.Length == 2)
+            //{
+            //    inputDir = args[0];
+            //    output = args[1];
+            //}
+            //if (args.Length == 1)
+            //{
+            //    inputDir = args[0];
+            //}
 
-            var output0 = inputDir;
+            var sourceDir = new DirectoryInfo(inputDir);
 
 
-            var output1 = inputDir + "_";
+            var scraped = Path.Combine(sourceDir.Parent.FullName, sourceDir.Name + "_1_scraped");
 
-            void PdfAndDocScraper() => IoExtensions.AggregateFilesInDirRecursively(output0, output1, true, FileScraper.ScrapFile);
+            void PdfAndDocScraper() => IoExtensions.AggregateFilesInDirRecursively(sourceDir.FullName, scraped, true, FileScraper.ScrapFile);
 
-            var output2 = output1 + "_";
-            void SpaceRemover() => IoExtensions.AggregateFilesInDirRecursively(output1, output2, true, DataAggregator.SpaceRemover.CleanUpSpace);
+            var spacesClean = Path.Combine(sourceDir.Parent.FullName, sourceDir.Name + "_2_spaces_rem");
+            void SpaceRemover() => IoExtensions.AggregateFilesInDirRecursively(scraped, spacesClean, true, DataAggregator.SpaceRemover.CleanUpSpace);
 
-            var output3 = output2 + "_";
+            var latinToGeoFixed = Path.Combine(sourceDir.Parent.FullName, sourceDir.Name + "_3_fix_lat_chars");
 
-            void LatinGeoFixer() => IoExtensions.AggregateFilesInDirRecursively(output2, output3, true, DataAggregator.LatinGeoFixer.FixLatinCharactersOrJustCopy);
+            void LatinGeoFixer() => IoExtensions.AggregateFilesInDirRecursively(spacesClean, latinToGeoFixed, true, DataAggregator.LatinGeoFixer.FixLatinCharactersOrJustCopy);
 
-            void ModelUpdater() => IoExtensions.AggregateFilesInDirRecursively(output3, output3, true, DataAggregator.GerogianTextModelUpdater.FeedFile);
+            void ModelUpdater() => IoExtensions.AggregateFilesInDirRecursively(latinToGeoFixed, latinToGeoFixed, true, DataAggregator.GerogianTextModelUpdater.FeedFile);
 
-            ModelUpdater();
+            //ModelUpdater();
+            //GerogianTextModelUpdater.Save();
 
             SpaceRemover();
 
@@ -52,9 +58,15 @@ namespace DataAggregator
 
             PdfAndDocScraper();
 
-            //var t3 = RunActionInEvery20Seconds(action);
+                //var t3 = RunActionInEvery20Seconds(action);
 
-            //Task.WaitAll(t1, t2, t3);
+                //Task.WaitAll(t1, t2, t3);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         private static Task RunActionInEvery20Seconds(Action action)
