@@ -6,6 +6,7 @@ using Pri.LongPath;
 
 namespace DataAggregator
 {
+    //TODO:Naming issue
     public static class LatinGeoFixer
     {
         static WordDetector _wordDetector = new WordDetector();
@@ -32,6 +33,40 @@ namespace DataAggregator
             }
         }
 
+        public static void FilterNonGeorgianTexts(FileInfo inputFile, string outputFile, bool updateMode)
+        {
+            if (updateMode && File.Exists(outputFile))
+            {
+                Console.WriteLine($"{nameof(FilterNonGeorgianTexts)} Skipping:{inputFile} because already exists {outputFile}");
+                return;
+            }
+
+            var textFromFile = File.ReadAllText(inputFile.FullName);
+
+            var isGeorgian = TextIsGeorgian(textFromFile);
+
+            if (isGeorgian)
+            {
+                File.WriteAllText(outputFile, textFromFile);
+            }
+            else
+            {
+                //TODO:Temp
+
+                try
+                {
+                    File.Copy(inputFile.FullName, Path.Combine(@"D:\Aleks\DataRepository\nonGeo", Path.GetFileName(outputFile)));
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+                //!
+
+                Console.WriteLine($"{nameof(FilterNonGeorgianTexts)} Skipping:{inputFile} doesn't contain georgian text");
+            }
+        }
+
         public static bool LooksLikeGeorgian(this string s)
         {
             return _wordDetector.LooksMoraLikeGeorgianWordThanEnglish(s);
@@ -53,7 +88,12 @@ namespace DataAggregator
 
             var randomWordsToCheck = 10;
             var rnd = new Random();
-            var random10Words = wordsFromIt.Where(w => w.Length > 5).OrderBy(x => rnd.Next()).Take(randomWordsToCheck);
+            var random10Words = wordsFromIt.Where(w => w.Length > 5)
+                .OrderBy(x => rnd.Next())
+                .Take(randomWordsToCheck)
+                //Clean punctuation
+                .Select(st => new string(st.ToCharArray().Where(c => !char.IsPunctuation(c)).ToArray()));
+
             var wordsWithCriteria =
                 random10Words.Where(checker);
             return wordsWithCriteria.Count() > randomWordsToCheck / 2;

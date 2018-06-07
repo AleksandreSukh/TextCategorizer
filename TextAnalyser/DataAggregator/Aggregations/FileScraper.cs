@@ -94,6 +94,15 @@ namespace DataAggregator
                 Console.WriteLine(e);
                 return false;
             }
+            catch (SEHException e)
+            {
+                Console.WriteLine(e);
+                return false;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
         }
     }
 }
