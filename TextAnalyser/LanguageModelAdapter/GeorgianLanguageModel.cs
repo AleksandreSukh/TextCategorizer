@@ -7,14 +7,16 @@ namespace LanguageModelAdapter
     public class GeorgianLanguageModel
     {
         private const string XmlFileName = "geo_model.xml";
-        readonly TextMarkovChain _chain;
+        TextMarkovChain _chain;
+        private int chunkCounter = 0;
 
         public GeorgianLanguageModel()
         {
-            if (!File.Exists(XmlFileName))
+            _chain = new TextMarkovChain();
+
+            if (!File.Exists(XmlFileName) && !File.Exists(FileNamePattern(0)))
             {
-                _chain = new TextMarkovChain();
-                _chain.Save(XmlFileName);
+                Save();
             }
             else
             {
@@ -32,13 +34,49 @@ namespace LanguageModelAdapter
         void Load()
         {
             var xmlDocument = new XmlDocument();
-            xmlDocument.Load(XmlFileName);
-            _chain.Feed(xmlDocument);
+            if (File.Exists(XmlFileName))
+            {
+                xmlDocument.Load(XmlFileName);
+                _chain.Feed(xmlDocument);
+            }
+            else
+            {
+                var loadingChunkCounter = 0;
+                while (File.Exists(FileNamePattern(loadingChunkCounter)))
+                {
+                    xmlDocument.Load(FileNamePattern(loadingChunkCounter));
+                    _chain.Feed(xmlDocument);
+                    loadingChunkCounter++;
+                }
+            }
         }
 
         public void Save()
         {
-            _chain.Save(XmlFileName);
+            if (chunkCounter == 0)
+            {
+                _chain.Save(XmlFileName);
+            }
+            else
+            {
+                if (chunkCounter == 1)
+                    File.Move(XmlFileName, FileNamePattern(0));
+
+                _chain.Save(FileNamePattern(chunkCounter));
+            }
+            _chain = new TextMarkovChain();
+            chunkCounter++;
+        }
+        string FileNamePattern(int number)
+        {
+            var existingFilePath = Path.Combine(Directory.GetCurrentDirectory(), XmlFileName);
+            var fileNameWe = Path.GetFileNameWithoutExtension(existingFilePath);
+            var e = Path.GetExtension(existingFilePath);
+
+            var dir = Path.GetDirectoryName(existingFilePath);
+
+            var numberField = $"_{number}_";
+            return Path.Combine(dir, $"{fileNameWe}{numberField}{e}");
         }
     }
 }

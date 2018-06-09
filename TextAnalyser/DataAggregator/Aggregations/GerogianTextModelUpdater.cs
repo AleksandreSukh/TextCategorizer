@@ -15,15 +15,22 @@ namespace DataAggregator
 
         public static void FeedFile(FileInfo input, string output, bool updateMode)
         {
+
             Console.WriteLine("Feeding:" + input);
-
-            Model.Feed(File.ReadAllText(input.FullName), false);
+            try
+            {
+                Model.Feed(File.ReadAllText(input.FullName), true);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
 
-        public static void Save()
-        {
-            Console.WriteLine("Saving");
-            Model.Save();
-        }
+        //public static void Save()
+        //{
+        //    Console.WriteLine("Saving");
+        //    Model.Save();
+        //}
     }
 }

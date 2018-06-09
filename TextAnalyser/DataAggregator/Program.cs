@@ -60,11 +60,12 @@ namespace DataAggregator
 
                 //SpaceRemover();
 
-                LatinGeoFixer();
+                //LatinGeoFixer();
 
-                GeorgianTextFilter();
+                //GeorgianTextFilter();
 
                 //ModelUpdater();
+                var sth = new GerogianTextModelUpdater();
                 //GerogianTextModelUpdater.Save();
 
                 //var t3 = RunActionInEvery20Seconds(action);
