@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Xml;
+using System.Xml.Serialization;
+using Newtonsoft.Json;
 
 namespace TextAnalyser
 {
@@ -105,31 +109,79 @@ namespace TextAnalyser
                 }
             }
         }
+
+        public void FeedFromDir(string dir)
+        {
+            foreach (var filePath in Directory.EnumerateFiles(dir, "*.xml"))
+            {
+                var xml = new XmlDocument();
+                xml.Load(filePath);
+                this.Feed(xml);
+            }
+        }
+
         /// <summary>
         /// XmlDocument ის შენახვა ფაილში
         /// </summary>
         /// <param name="path"></param>
         public void Save(string path)
         {
-            var xd = GetDataAsXml();
+            var xd = GetDataAsXml().Single();
             xd.Save(path);
         }
+
+        public void SaveToDir(string path)
+        {
+            var xds = GetDataAsXml(20);
+
+            if (Directory.Exists(path))
+                Directory.Delete(path, true);
+
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
+            for (int i = 0; i < xds.Count(); i++)
+            {
+                var xd = xds.ElementAt(i);
+                xd.Save(Path.Combine(path, $"{i}.xml"));
+            }
+        }
+
         /// <summary>
         /// ჯაჭვის XmlDocument ის გენერირება
         /// </summary>
         /// <returns></returns>
-        public XmlDocument GetDataAsXml()
+        public List<XmlDocument> GetDataAsXml(int maxKeysPerChunk = -1)
+        {
+            XmlElement root;
+            var currentDocument = CreateEmptyRootXmlDocument(out root);
+            List<XmlDocument> elementsToReturn = new List<XmlDocument>();
+            for (int i = 0; i < _chains.Count; i++)
+            {
+                XmlDocument elementToYeld = null;
+
+                if (maxKeysPerChunk != -1)
+                    if ((i % maxKeysPerChunk) == 1)
+                    {
+                        elementsToReturn.Add(currentDocument);
+                        currentDocument = CreateEmptyRootXmlDocument(out root);
+                    }
+
+                var key = _chains.Keys.ElementAt(i);
+                root.AppendChild(_chains[key].GetXmlElement(currentDocument));
+            }
+
+            return elementsToReturn;
+        }
+
+        private static XmlDocument CreateEmptyRootXmlDocument(out XmlElement root)
         {
             var xd = new XmlDocument();
-            var root = xd.CreateElement("Chains");
+            root = xd.CreateElement("Chains");
             xd.AppendChild(root);
-
-            foreach (var key in _chains.Keys)
-                root.AppendChild(_chains[key].GetXmlElement(xd));
 
             return xd;
         }
-
 
 
         /// <summary>
@@ -221,6 +273,16 @@ namespace TextAnalyser
             {
                 this.Chain = chain;
                 this.Count = count;
+            }
+        }
+
+        public void LoadFromDirectory(string xmlDirectory)
+        {
+            foreach (var xmlFile in Directory.EnumerateFiles(xmlDirectory))
+            {
+                var xmlDocument = new XmlDocument();
+                xmlDocument.Load(xmlFile);
+                Feed(xmlFile);
             }
         }
     }

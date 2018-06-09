@@ -6,15 +6,15 @@ namespace LanguageModelAdapter
 {
     public class GeorgianLanguageModel
     {
-        private const string XmlFileName = "geo_model.xml";
+        private const string XmlDirectory = "geo_model";
         readonly TextMarkovChain _chain;
 
         public GeorgianLanguageModel()
         {
-            if (!File.Exists(XmlFileName))
+            _chain = new TextMarkovChain();
+            if (!Directory.Exists(XmlDirectory))
             {
-                _chain = new TextMarkovChain();
-                _chain.Save(XmlFileName);
+                _chain.SaveToDir(XmlDirectory);
             }
             else
             {
@@ -31,14 +31,12 @@ namespace LanguageModelAdapter
 
         void Load()
         {
-            var xmlDocument = new XmlDocument();
-            xmlDocument.Load(XmlFileName);
-            _chain.Feed(xmlDocument);
+            _chain.LoadFromDirectory(XmlDirectory);
         }
 
         public void Save()
         {
-            _chain.Save(XmlFileName);
+            _chain.SaveToDir(XmlDirectory);
         }
     }
 }
