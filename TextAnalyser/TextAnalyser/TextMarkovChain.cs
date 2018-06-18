@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Xml;
+using TextMarkovChains;
 
 namespace TextAnalyser
 {
-    public class TextMarkovChain
+    public class TextMarkovChain :IMarkovChain
     {
         //Private fields
         private readonly Dictionary<string, Chain> _chains;
@@ -114,6 +115,12 @@ namespace TextAnalyser
             var xd = GetDataAsXml();
             xd.Save(path);
         }
+
+        public string GenerateSentence()
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// ჯაჭვის XmlDocument ის გენერირება
         /// </summary>

@@ -1,44 +1,14 @@
 ﻿using System.IO;
 using System.Xml;
-using TextAnalyser;
+using TextMarkovChains;
+using TextMarkovChain = TextAnalyser.TextMarkovChain;
 
 namespace LanguageModelAdapter
 {
-    public class GeorgianLanguageModel
+    public class GeorgianLanguageModel : ChainAdapter<TextMarkovChain>
     {
-        private const string XmlFileName = "geo_model.xml";
-        readonly TextMarkovChain _chain;
+        protected override string XmlFileName { get; } = "geo_model.xml";
 
-        public GeorgianLanguageModel()
-        {
-            if (!File.Exists(XmlFileName))
-            {
-                _chain = new TextMarkovChain();
-                _chain.Save(XmlFileName);
-            }
-            else
-            {
-                Load();
-            }
-        }
-
-        public void Feed(string text, bool save)
-        {
-            _chain.Feed(text);
-            if (save)
-                Save();
-        }
-
-        void Load()
-        {
-            var xmlDocument = new XmlDocument();
-            xmlDocument.Load(XmlFileName);
-            _chain.Feed(xmlDocument);
-        }
-
-        public void Save()
-        {
-            _chain.Save(XmlFileName);
-        }
+        protected override IMarkovChain InitializeChain() => new TextMarkovChain();
     }
 }
