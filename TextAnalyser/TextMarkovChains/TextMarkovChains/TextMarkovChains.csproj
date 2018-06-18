@@ -59,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeepMarkovChain.cs" />
-    <Compile Include="ITextMarkovChain.cs" />
     <Compile Include="MultiDeepMarkovChain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomHandler.cs" />

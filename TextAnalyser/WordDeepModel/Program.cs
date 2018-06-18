@@ -19,7 +19,7 @@ namespace WordDeepModel
             //}
 
 
-            var model = new GeorgianLanguageModelDeep();
+            var model = new GeorgianLanguageModel();
             var random = model.Chain.GenerateSentence();
             var tempPath = Path.GetTempFileName();
             File.WriteAllText(tempPath, random);

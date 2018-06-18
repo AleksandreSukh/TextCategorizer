@@ -5,7 +5,7 @@ using System.Xml;
 
 namespace TextMarkovChains
 {
-    public class TextMarkovChain : ITextMarkovChain
+    public class TextMarkovChain : IMarkovChain
     {
         private readonly Dictionary<string, Chain> _chains;
         private readonly Chain _head;
@@ -90,6 +90,8 @@ namespace TextMarkovChains
             xd.Save(path);
         }
 
+    
+
         public XmlDocument GetDataAsXML()
         {
             XmlDocument xd = new XmlDocument();
@@ -107,7 +109,7 @@ namespace TextMarkovChains
             return _head.GetNextChain() != null;
         }
 
-        public string generateSentence()
+        public string GenerateSentence()
         {
             StringBuilder s = new StringBuilder();
             Chain nextString = _head.GetNextChain();
