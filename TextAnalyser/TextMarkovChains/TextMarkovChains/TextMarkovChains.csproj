@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="DeepMarkovChain.cs" />
     <Compile Include="MultiDeepMarkovChain.cs" />
+    <Compile Include="OrderedSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomHandler.cs" />
     <Compile Include="TextMarkovChain.cs" />
