@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Xml;
 using TextMarkovChains;
 
@@ -7,6 +8,7 @@ namespace LanguageModelAdapter
     public abstract class ChainAdapter<T> where T : IMarkovChain
     {
         protected abstract string XmlFileName { get; }
+        protected abstract Action<int> FileBeingLoadedLogger { get; }
 
         public IMarkovChain Chain => _chain;
 
@@ -26,7 +28,7 @@ namespace LanguageModelAdapter
             }
             else
             {
-                Load();
+                Load(FileBeingLoadedLogger);
             }
         }
 
@@ -39,7 +41,7 @@ namespace LanguageModelAdapter
                 Save();
         }
 
-        void Load()
+        void Load(Action<int> fileBeingLoadedLogger)
         {
             var xmlDocument = new XmlDocument();
             if (File.Exists(XmlFileName))
@@ -54,6 +56,7 @@ namespace LanguageModelAdapter
                 {
                     xmlDocument.Load(FileNamePattern(loadingChunkCounter));
                     Chain.Feed(xmlDocument);
+                    fileBeingLoadedLogger?.Invoke(loadingChunkCounter);
                     loadingChunkCounter++;
                 }
             }

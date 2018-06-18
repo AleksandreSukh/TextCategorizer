@@ -5,7 +5,7 @@ using TextMarkovChains;
 
 namespace TextAnalyser
 {
-    public class TextMarkovChain :IMarkovChain
+    public class TextMarkovChain 
     {
         //Private fields
         private readonly Dictionary<string, Chain> _chains;
@@ -114,11 +114,6 @@ namespace TextAnalyser
         {
             var xd = GetDataAsXml();
             xd.Save(path);
-        }
-
-        public string GenerateSentence()
-        {
-            throw new NotImplementedException();
         }
 
         /// <summary>
