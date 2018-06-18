@@ -16,7 +16,10 @@ namespace LanguageModelAdapter
         public ChainAdapter()
         {
             _chain = InitializeChain();
-
+            if (File.Exists(XmlFileName) && File.Exists(FileNamePattern(0)))
+            {
+                File.Delete(XmlFileName);
+            }
             if (!File.Exists(XmlFileName) && !File.Exists(FileNamePattern(0)))
             {
                 Save();
