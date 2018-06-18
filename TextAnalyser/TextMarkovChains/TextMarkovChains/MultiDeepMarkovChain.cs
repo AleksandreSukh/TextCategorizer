@@ -5,7 +5,16 @@ using System.Xml;
 
 namespace TextMarkovChains
 {
-    public class MultiDeepMarkovChain
+    public interface IMarkovChain
+    {
+        void Feed(string s);
+        void Feed(XmlDocument xd);
+        void Save(string path);
+        string GenerateSentence();
+
+
+    }
+    public class MultiDeepMarkovChain : IMarkovChain
     {
         public Dictionary<string, Chain> chains;
         private Chain head;
@@ -29,7 +38,7 @@ namespace TextMarkovChains
         /// Feed in text that wil be used to create predictive text.
         /// </summary>
         /// <param name="s">The text that this Markov chain will use to generate new sentences</param>
-        public void feed(string s)
+        public void Feed(string s)
         {
             s = s.ToLower();
             s = s.Replace("/", "").Replace("\\", "").Replace("[]", "").Replace(",", "");
@@ -59,7 +68,7 @@ namespace TextMarkovChains
         /// Feed in a saved XML document of values that will be used to generate sentences.  Please note that the depth in the XML document must match the depth created by the constructor of this Markov Chain.
         /// </summary>
         /// <param name="xd">The XML document used to load this Markov Chain.</param>
-        public void feed(XmlDocument xd)
+        public void Feed(XmlDocument xd)
         {
             XmlNode root = xd.ChildNodes[0];
             int rootDepth = Convert.ToInt32(root.Attributes["Depth"].Value.ToString());
@@ -149,7 +158,7 @@ namespace TextMarkovChains
         /// Generate a sentence based on the data passed into this Markov Chain.
         /// </summary>
         /// <returns></returns>
-        public string generateSentence()
+        public string GenerateSentence()
         {
             StringBuilder sb = new StringBuilder();
             string[] currentChains = new string[depth];
@@ -275,7 +284,7 @@ namespace TextMarkovChains
         /// Save the data contained in this Markov Chain to an XML document.
         /// </summary>
         /// <param name="path">The file path to Save to.</param>
-        public void save(string path)
+        public void Save(string path)
         {
             XmlDocument xd = getXmlDocument();
             xd.Save(path);

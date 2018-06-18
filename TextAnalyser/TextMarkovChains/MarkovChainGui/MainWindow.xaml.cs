@@ -22,14 +22,14 @@ namespace MarkovChainGui
 
         private void btnEntry_Click(object sender, RoutedEventArgs e)
         {
-            multi.feed(txtEntry.Text);
+            multi.Feed(txtEntry.Text);
             txtEntry.Text = string.Empty;
         }
 
         private void btnGenerate_Click(object sender, RoutedEventArgs e)
         {
             if(multi.readyToGenerate())
-                txtOutput.Text = multi.generateSentence();
+                txtOutput.Text = multi.GenerateSentence();
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
@@ -39,7 +39,7 @@ namespace MarkovChainGui
             Nullable<bool> saved = sfd.ShowDialog();
             if (saved == true)
             {
-                multi.save(sfd.FileName);
+                multi.Save(sfd.FileName);
             }
         }
 
@@ -51,7 +51,7 @@ namespace MarkovChainGui
             {
                 XmlDocument xd = new XmlDocument();
                 xd.Load(ofd.FileName);
-                multi.feed(xd);
+                multi.Feed(xd);
             }
         }
 

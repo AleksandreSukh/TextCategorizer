@@ -83,6 +83,10 @@
       <Project>{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}</Project>
       <Name>LanguageModelAdapter</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TextAnalyser\TextAnalyser.csproj">
+      <Project>{7900035A-6B9F-4B07-84E0-71B5134406BD}</Project>
+      <Name>TextAnalyser</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
