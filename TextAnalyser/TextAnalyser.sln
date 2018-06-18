@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.1
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAnalyser", "TextAnalyser\TextAnalyser.csproj", "{7900035A-6B9F-4B07-84E0-71B5134406BD}"
 EndProject
@@ -34,6 +34,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordDetectorTests", "WordDetectorTests\WordDetectorTests.csproj", "{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageModelAdapter", "LanguageModelAdapter\LanguageModelAdapter.csproj", "{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TextMarkovChains", "TextMarkovChains", "{398E695A-C825-4B32-AC84-18D6096B7DB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextMarkovChains", "TextMarkovChains\TextMarkovChains\TextMarkovChains.csproj", "{FC6D37A9-A17A-4D22-8FCA-91A9FEF74152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkovChainGui", "TextMarkovChains\MarkovChainGui\MarkovChainGui.csproj", "{1AC630E5-0216-4B75-91D9-090A9D022F9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -155,6 +161,20 @@ Global
 		{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}.Release|x86.ActiveCfg = Release|Any CPU
 		{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}.Release|x86.Build.0 = Release|Any CPU
+		{FC6D37A9-A17A-4D22-8FCA-91A9FEF74152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC6D37A9-A17A-4D22-8FCA-91A9FEF74152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC6D37A9-A17A-4D22-8FCA-91A9FEF74152}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FC6D37A9-A17A-4D22-8FCA-91A9FEF74152}.Debug|x86.Build.0 = Debug|Any CPU
+		{FC6D37A9-A17A-4D22-8FCA-91A9FEF74152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC6D37A9-A17A-4D22-8FCA-91A9FEF74152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC6D37A9-A17A-4D22-8FCA-91A9FEF74152}.Release|x86.ActiveCfg = Release|Any CPU
+		{FC6D37A9-A17A-4D22-8FCA-91A9FEF74152}.Release|x86.Build.0 = Release|Any CPU
+		{1AC630E5-0216-4B75-91D9-090A9D022F9A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1AC630E5-0216-4B75-91D9-090A9D022F9A}.Debug|x86.ActiveCfg = Debug|x86
+		{1AC630E5-0216-4B75-91D9-090A9D022F9A}.Debug|x86.Build.0 = Debug|x86
+		{1AC630E5-0216-4B75-91D9-090A9D022F9A}.Release|Any CPU.ActiveCfg = Release|x86
+		{1AC630E5-0216-4B75-91D9-090A9D022F9A}.Release|x86.ActiveCfg = Release|x86
+		{1AC630E5-0216-4B75-91D9-090A9D022F9A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -169,6 +189,8 @@ Global
 		{FCBBD75D-AD7C-4FDD-9AD2-D894ED043DF7} = {6C01E9C1-DB51-4499-9B40-B3349FBFF615}
 		{A4BDDF2F-BE68-4706-B2D6-95110F9D7FB5} = {6C01E9C1-DB51-4499-9B40-B3349FBFF615}
 		{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0} = {6C01E9C1-DB51-4499-9B40-B3349FBFF615}
+		{FC6D37A9-A17A-4D22-8FCA-91A9FEF74152} = {398E695A-C825-4B32-AC84-18D6096B7DB6}
+		{1AC630E5-0216-4B75-91D9-090A9D022F9A} = {398E695A-C825-4B32-AC84-18D6096B7DB6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9C08206B-C427-4C07-A4F3-0A58CA9D1215}
