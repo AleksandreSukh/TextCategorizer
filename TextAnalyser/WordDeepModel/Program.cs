@@ -20,13 +20,26 @@ namespace WordDeepModel
             //    model.Feed(File.ReadAllText(file), true);
             //}
 
-
+            var before = DateTime.Now;
             var model = new GeorgianLanguageModelOptimized();
+            var after = DateTime.Now;
+            var timeSpent = (after - before);
+            File.WriteAllText("timeSpent.txt", timeSpent.ToString());
+            GenerateSentence(model);
+            GenerateSentence(model);
+            GenerateSentence(model);
+            GenerateSentence(model);
+            GenerateSentence(model);
+            GenerateSentence(model);
+            GenerateSentence(model);
+        }
+
+        private static void GenerateSentence(GeorgianLanguageModelOptimized model)
+        {
             var random = model.Chain.GenerateSentence();
             var tempPath = Path.GetTempFileName();
             File.WriteAllText(tempPath, random);
             Process.Start("notepad.exe", tempPath);
-
         }
     }
     public class GeorgianLanguageModelOptimized : ChainAdapter<TextMarkovChainOptimized>
