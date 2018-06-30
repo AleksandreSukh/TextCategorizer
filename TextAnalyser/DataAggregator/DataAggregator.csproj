@@ -107,6 +107,10 @@
       <Project>{7900035A-6B9F-4B07-84E0-71B5134406BD}</Project>
       <Name>TextAnalyser</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WordDataAdapter\WordDataAdapter.csproj">
+      <Project>{F5BF7ADB-7AA2-4F3A-A9C8-C17D6B519FA5}</Project>
+      <Name>WordDataAdapter</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

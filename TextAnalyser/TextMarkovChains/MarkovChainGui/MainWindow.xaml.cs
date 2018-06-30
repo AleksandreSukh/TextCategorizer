@@ -28,7 +28,7 @@ namespace MarkovChainGui
 
         private void btnGenerate_Click(object sender, RoutedEventArgs e)
         {
-            if(multi.readyToGenerate())
+            if(multi.ReadyToGenerate())
                 txtOutput.Text = multi.GenerateSentence();
         }
 
@@ -62,7 +62,7 @@ namespace MarkovChainGui
 
         private void predictiveText()
         {
-            List<string> test = multi.getNextLikelyWord(txtTypingTest.Text.Trim());
+            List<string> test = multi.GetNextLikelyWord(txtTypingTest.Text.Trim());
             StringBuilder sb = new StringBuilder();
             foreach (string s in test)
                 sb.Append(s).Append(" ");

@@ -52,6 +52,7 @@ namespace DataAggregator
 
                 void ModelUpdater() => IoExtensions.AggregateFilesInDirRecursively(onlyGeorgian, onlyGeorgian, true, DataAggregator.GerogianTextModelUpdater.FeedFile);
 
+                void ModelCreatorIntoDb => IoExtensions.AggregateFilesInDirRecursively(onlyGeorgian, onlyGeorgian, true, DataAggregator.GerogianTextModelUpdater.FeedFile);
 
 
 

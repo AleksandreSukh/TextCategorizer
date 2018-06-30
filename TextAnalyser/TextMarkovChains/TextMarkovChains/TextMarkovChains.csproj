@@ -59,11 +59,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeepMarkovChain.cs" />
+    <Compile Include="IMarkovChain.cs" />
+    <Compile Include="IWord.cs" />
     <Compile Include="MultiDeepMarkovChain.cs" />
+    <Compile Include="MultiDeepMarkovChainOptimized.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomHandler.cs" />
     <Compile Include="TextMarkovChain.cs" />
     <Compile Include="TextMarkovChainOptimized.cs" />
+    <Compile Include="Word.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
