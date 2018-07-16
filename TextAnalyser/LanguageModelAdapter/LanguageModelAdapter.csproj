@@ -58,18 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChainAdapter.cs" />
-    <Compile Include="GeorgianLanguageModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TextAnalyser\TextAnalyser.csproj">
       <Project>{7900035A-6B9F-4B07-84E0-71B5134406BD}</Project>
       <Name>TextAnalyser</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TextMarkovChains\TextMarkovChains\TextMarkovChains.csproj">
-      <Project>{FC6D37A9-A17A-4D22-8FCA-91A9FEF74152}</Project>
-      <Name>TextMarkovChains</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

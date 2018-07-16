@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ResourcesJson\english_words.json" />
+    <None Remove="ResourcesJson\wordsChunk_0.json" />
+    <None Remove="ResourcesJson\wordsChunk_1.json" />
+    <None Remove="ResourcesJson\wordsChunk_2.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ResourcesJson\english_words.json" />
+    <EmbeddedResource Include="ResourcesJson\wordsChunk_0.json" />
+    <EmbeddedResource Include="ResourcesJson\wordsChunk_1.json" />
+    <EmbeddedResource Include="ResourcesJson\wordsChunk_2.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>

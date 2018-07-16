@@ -1,0 +1,1272 @@
+<Chains>
+  <Chain Word="[]" FullCount="271787">
+    <NextChains>
+      <Chain Word="ქ" Count="3740" />
+      <Chain Word="ს" Count="19880" />
+      <Chain Word="რ" Count="4667" />
+      <Chain Word="ფ" Count="5286" />
+      <Chain Word="კ" Count="9771" />
+      <Chain Word="პ" Count="5927" />
+      <Chain Word="ა" Count="19038" />
+      <Chain Word="დ" Count="23356" />
+      <Chain Word="შ" Count="14696" />
+      <Chain Word="ნ" Count="5664" />
+      <Chain Word="მ" Count="38681" />
+      <Chain Word="თ" Count="5515" />
+      <Chain Word="ბ" Count="7737" />
+      <Chain Word="უ" Count="7252" />
+      <Chain Word="ე" Count="6239" />
+      <Chain Word="გ" Count="35302" />
+      <Chain Word="ჰ" Count="2539" />
+      <Chain Word="ო" Count="3112" />
+      <Chain Word="ჟ" Count="558" />
+      <Chain Word="ვ" Count="7467" />
+      <Chain Word="ტ" Count="4335" />
+      <Chain Word="ყ" Count="2033" />
+      <Chain Word="ჯ" Count="1783" />
+      <Chain Word="ი" Count="7499" />
+      <Chain Word="ხ" Count="4067" />
+      <Chain Word="ჩ" Count="6496" />
+      <Chain Word="ლ" Count="3572" />
+      <Chain Word="ძ" Count="1534" />
+      <Chain Word="-" Count="83" />
+      <Chain Word="წ" Count="6313" />
+      <Chain Word="ღ" Count="1441" />
+      <Chain Word="ზ" Count="2070" />
+      <Chain Word="ც" Count="2815" />
+      <Chain Word="ჭ" Count="1319" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ქ" FullCount="20023">
+    <NextChains>
+      <Chain Word="ა" Count="3172" />
+      <Chain Word="ტ" Count="1429" />
+      <Chain Word="." Count="120" />
+      <Chain Word="ვ" Count="2217" />
+      <Chain Word="ს" Count="1378" />
+      <Chain Word="მ" Count="1797" />
+      <Chain Word="ე" Count="1586" />
+      <Chain Word="რ" Count="1371" />
+      <Chain Word="ი" Count="2330" />
+      <Chain Word="უ" Count="758" />
+      <Chain Word="ო" Count="1261" />
+      <Chain Word="ნ" Count="624" />
+      <Chain Word="შ" Count="72" />
+      <Chain Word="ც" Count="1344" />
+      <Chain Word="ლ" Count="209" />
+      <Chain Word="თ" Count="51" />
+      <Chain Word="გ" Count="19" />
+      <Chain Word="-" Count="80" />
+      <Chain Word="ზ" Count="24" />
+      <Chain Word="დ" Count="79" />
+      <Chain Word="ჰ" Count="10" />
+      <Chain Word="ბ" Count="25" />
+      <Chain Word="კ" Count="12" />
+      <Chain Word="ღ" Count="2" />
+      <Chain Word="ფ" Count="9" />
+      <Chain Word="ჩ" Count="7" />
+      <Chain Word="პ" Count="11" />
+      <Chain Word="წ" Count="18" />
+      <Chain Word="ჯ" Count="4" />
+      <Chain Word="ყ" Count="2" />
+      <Chain Word="ქ" Count="1" />
+      <Chain Word="ხ" Count="1" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ა" FullCount="363755">
+    <NextChains>
+      <Chain Word="რ" Count="32564" />
+      <Chain Word="ი" Count="6266" />
+      <Chain Word="." Count="62556" />
+      <Chain Word="-" Count="2091" />
+      <Chain Word="ს" Count="18995" />
+      <Chain Word="ც" Count="10027" />
+      <Chain Word="ქ" Count="3415" />
+      <Chain Word="ღ" Count="4674" />
+      <Chain Word="თ" Count="10954" />
+      <Chain Word="ხ" Count="9317" />
+      <Chain Word="ნ" Count="36406" />
+      <Chain Word="ლ" Count="15736" />
+      <Chain Word="შ" Count="5797" />
+      <Chain Word="ტ" Count="7351" />
+      <Chain Word="მ" Count="29834" />
+      <Chain Word="დ" Count="19140" />
+      <Chain Word="ვ" Count="22519" />
+      <Chain Word="ზ" Count="5405" />
+      <Chain Word="ა" Count="6282" />
+      <Chain Word="გ" Count="9881" />
+      <Chain Word="პ" Count="2612" />
+      <Chain Word="ფ" Count="3934" />
+      <Chain Word="უ" Count="5991" />
+      <Chain Word="ყ" Count="2296" />
+      <Chain Word="ო" Count="4369" />
+      <Chain Word="წ" Count="3345" />
+      <Chain Word="ბ" Count="4904" />
+      <Chain Word="ძ" Count="1804" />
+      <Chain Word="კ" Count="6797" />
+      <Chain Word="ე" Count="3086" />
+      <Chain Word="ჭ" Count="1256" />
+      <Chain Word="ჩ" Count="1588" />
+      <Chain Word="ჯ" Count="993" />
+      <Chain Word="ჰ" Count="896" />
+      <Chain Word="ჟ" Count="674" />
+    </NextChains>
+  </Chain>
+  <Chain Word="რ" FullCount="124048">
+    <NextChains>
+      <Chain Word="თ" Count="6760" />
+      <Chain Word="ე" Count="22228" />
+      <Chain Word="ა" Count="16543" />
+      <Chain Word="ო" Count="11191" />
+      <Chain Word="ი" Count="22655" />
+      <Chain Word="ს" Count="3505" />
+      <Chain Word="." Count="2460" />
+      <Chain Word="დ" Count="5446" />
+      <Chain Word="ც" Count="1481" />
+      <Chain Word="ტ" Count="2523" />
+      <Chain Word="ნ" Count="1737" />
+      <Chain Word="ვ" Count="2150" />
+      <Chain Word="მ" Count="3338" />
+      <Chain Word="უ" Count="5088" />
+      <Chain Word="გ" Count="2420" />
+      <Chain Word="ჩ" Count="2058" />
+      <Chain Word="ბ" Count="1329" />
+      <Chain Word="ყ" Count="261" />
+      <Chain Word="ფ" Count="552" />
+      <Chain Word="ჯ" Count="777" />
+      <Chain Word="შ" Count="840" />
+      <Chain Word="წ" Count="1092" />
+      <Chain Word="კ" Count="1262" />
+      <Chain Word="ლ" Count="538" />
+      <Chain Word="ხ" Count="791" />
+      <Chain Word="ძ" Count="1861" />
+      <Chain Word="ქ" Count="691" />
+      <Chain Word="ჭ" Count="232" />
+      <Chain Word="პ" Count="281" />
+      <Chain Word="ჟ" Count="129" />
+      <Chain Word="ზ" Count="602" />
+      <Chain Word="-" Count="770" />
+      <Chain Word="ღ" Count="403" />
+      <Chain Word="ჰ" Count="45" />
+      <Chain Word="რ" Count="9" />
+    </NextChains>
+  </Chain>
+  <Chain Word="თ" FullCount="68887">
+    <NextChains>
+      <Chain Word="უ" Count="1163" />
+      <Chain Word="ხ" Count="3270" />
+      <Chain Word="." Count="24229" />
+      <Chain Word="ვ" Count="6476" />
+      <Chain Word="ი" Count="3768" />
+      <Chain Word="ქ" Count="2403" />
+      <Chain Word="ა" Count="15091" />
+      <Chain Word="ე" Count="4108" />
+      <Chain Word="ო" Count="2544" />
+      <Chain Word="ბ" Count="311" />
+      <Chain Word="ლ" Count="1041" />
+      <Chain Word="მ" Count="1207" />
+      <Chain Word="რ" Count="891" />
+      <Chain Word="კ" Count="63" />
+      <Chain Word="შ" Count="243" />
+      <Chain Word="ს" Count="481" />
+      <Chain Word="-" Count="438" />
+      <Chain Word="ზ" Count="124" />
+      <Chain Word="დ" Count="209" />
+      <Chain Word="პ" Count="11" />
+      <Chain Word="ჯ" Count="20" />
+      <Chain Word="გ" Count="192" />
+      <Chain Word="ნ" Count="380" />
+      <Chain Word="ჰ" Count="16" />
+      <Chain Word="ფ" Count="48" />
+      <Chain Word="წ" Count="27" />
+      <Chain Word="ც" Count="27" />
+      <Chain Word="ჩ" Count="11" />
+      <Chain Word="ჭ" Count="6" />
+      <Chain Word="ღ" Count="20" />
+      <Chain Word="თ" Count="60" />
+      <Chain Word="ტ" Count="7" />
+      <Chain Word="ყ" Count="2" />
+    </NextChains>
+  </Chain>
+  <Chain Word="უ" FullCount="71007">
+    <NextChains>
+      <Chain Word="ლ" Count="19140" />
+      <Chain Word="ხ" Count="2034" />
+      <Chain Word="რ" Count="12978" />
+      <Chain Word="ნ" Count="4923" />
+      <Chain Word="ა" Count="2091" />
+      <Chain Word="შ" Count="1562" />
+      <Chain Word="ზ" Count="860" />
+      <Chain Word="-" Count="191" />
+      <Chain Word="ს" Count="2969" />
+      <Chain Word="ფ" Count="1257" />
+      <Chain Word="ჟ" Count="96" />
+      <Chain Word="ყ" Count="511" />
+      <Chain Word="ბ" Count="1820" />
+      <Chain Word="პ" Count="866" />
+      <Chain Word="მ" Count="2957" />
+      <Chain Word="ც" Count="1229" />
+      <Chain Word="კ" Count="1908" />
+      <Chain Word="ტ" Count="1410" />
+      <Chain Word="ძ" Count="582" />
+      <Chain Word="თ" Count="1601" />
+      <Chain Word="." Count="394" />
+      <Chain Word="ი" Count="654" />
+      <Chain Word="დ" Count="1911" />
+      <Chain Word="ჭ" Count="515" />
+      <Chain Word="ე" Count="867" />
+      <Chain Word="ღ" Count="694" />
+      <Chain Word="ჩ" Count="667" />
+      <Chain Word="წ" Count="894" />
+      <Chain Word="ქ" Count="1274" />
+      <Chain Word="გ" Count="942" />
+      <Chain Word="ვ" Count="567" />
+      <Chain Word="ჯ" Count="325" />
+      <Chain Word="ო" Count="232" />
+      <Chain Word="ჰ" Count="29" />
+      <Chain Word="უ" Count="57" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ლ" FullCount="99115">
+    <NextChains>
+      <Chain Word="ი" Count="29628" />
+      <Chain Word="." Count="4106" />
+      <Chain Word="ო" Count="10338" />
+      <Chain Word="უ" Count="2473" />
+      <Chain Word="ე" Count="19015" />
+      <Chain Word="ა" Count="13700" />
+      <Chain Word="მ" Count="3204" />
+      <Chain Word="ზ" Count="768" />
+      <Chain Word="ფ" Count="305" />
+      <Chain Word="შ" Count="955" />
+      <Chain Word="დ" Count="2272" />
+      <Chain Word="ვ" Count="982" />
+      <Chain Word="წ" Count="290" />
+      <Chain Word="ბ" Count="520" />
+      <Chain Word="გ" Count="504" />
+      <Chain Word="ხ" Count="412" />
+      <Chain Word="თ" Count="1794" />
+      <Chain Word="ქ" Count="226" />
+      <Chain Word="ნ" Count="1198" />
+      <Chain Word="ც" Count="69" />
+      <Chain Word="ტ" Count="700" />
+      <Chain Word="ს" Count="3659" />
+      <Chain Word="კ" Count="431" />
+      <Chain Word="-" Count="861" />
+      <Chain Word="პ" Count="86" />
+      <Chain Word="რ" Count="59" />
+      <Chain Word="ღ" Count="147" />
+      <Chain Word="ჩ" Count="117" />
+      <Chain Word="ყ" Count="156" />
+      <Chain Word="ჰ" Count="33" />
+      <Chain Word="ძ" Count="31" />
+      <Chain Word="ჯ" Count="17" />
+      <Chain Word="ჟ" Count="13" />
+      <Chain Word="ჭ" Count="15" />
+      <Chain Word="ლ" Count="31" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ი" FullCount="256299">
+    <NextChains>
+      <Chain Word="." Count="50872" />
+      <Chain Word="ტ" Count="4494" />
+      <Chain Word="ს" Count="45364" />
+      <Chain Word="ნ" Count="16369" />
+      <Chain Word="თ" Count="17150" />
+      <Chain Word="ა" Count="22603" />
+      <Chain Word="რ" Count="9100" />
+      <Chain Word="ძ" Count="1701" />
+      <Chain Word="მ" Count="5751" />
+      <Chain Word="დ" Count="9142" />
+      <Chain Word="კ" Count="5075" />
+      <Chain Word="ე" Count="5605" />
+      <Chain Word="ხ" Count="2353" />
+      <Chain Word="ვ" Count="5703" />
+      <Chain Word="ზ" Count="2584" />
+      <Chain Word="ლ" Count="14715" />
+      <Chain Word="ი" Count="1777" />
+      <Chain Word="ო" Count="4376" />
+      <Chain Word="ც" Count="6032" />
+      <Chain Word="უ" Count="3209" />
+      <Chain Word="პ" Count="1166" />
+      <Chain Word="ფ" Count="1588" />
+      <Chain Word="წ" Count="1995" />
+      <Chain Word="გ" Count="2729" />
+      <Chain Word="ყ" Count="2772" />
+      <Chain Word="ღ" Count="1275" />
+      <Chain Word="ბ" Count="2091" />
+      <Chain Word="შ" Count="2829" />
+      <Chain Word="ჩ" Count="889" />
+      <Chain Word="ქ" Count="1968" />
+      <Chain Word="-" Count="968" />
+      <Chain Word="ჭ" Count="823" />
+      <Chain Word="ჯ" Count="644" />
+      <Chain Word="ჟ" Count="371" />
+      <Chain Word="ჰ" Count="216" />
+    </NextChains>
+  </Chain>
+  <Chain Word="." FullCount="0">
+    <NextChains />
+  </Chain>
+  <Chain Word="ს" FullCount="139878">
+    <NextChains>
+      <Chain Word="ა" Count="35085" />
+      <Chain Word="." Count="52867" />
+      <Chain Word="ტ" Count="5402" />
+      <Chain Word="უ" Count="3324" />
+      <Chain Word="ი" Count="9696" />
+      <Chain Word="პ" Count="1413" />
+      <Chain Word="ხ" Count="2074" />
+      <Chain Word="კ" Count="2227" />
+      <Chain Word="ე" Count="5394" />
+      <Chain Word="ო" Count="3852" />
+      <Chain Word="თ" Count="3611" />
+      <Chain Word="მ" Count="1815" />
+      <Chain Word="წ" Count="2457" />
+      <Chain Word="გ" Count="908" />
+      <Chain Word="-" Count="556" />
+      <Chain Word="შ" Count="310" />
+      <Chain Word="ნ" Count="986" />
+      <Chain Word="რ" Count="1392" />
+      <Chain Word="დ" Count="792" />
+      <Chain Word="ვ" Count="1649" />
+      <Chain Word="ძ" Count="330" />
+      <Chain Word="ც" Count="914" />
+      <Chain Word="ფ" Count="549" />
+      <Chain Word="ჯ" Count="360" />
+      <Chain Word="ჭ" Count="248" />
+      <Chain Word="ზ" Count="184" />
+      <Chain Word="ქ" Count="193" />
+      <Chain Word="ბ" Count="123" />
+      <Chain Word="ლ" Count="479" />
+      <Chain Word="ყ" Count="149" />
+      <Chain Word="ჰ" Count="37" />
+      <Chain Word="ჩ" Count="155" />
+      <Chain Word="ს" Count="274" />
+      <Chain Word="ღ" Count="64" />
+      <Chain Word="ჟ" Count="9" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ტ" FullCount="41752">
+    <NextChains>
+      <Chain Word="ე" Count="7237" />
+      <Chain Word="ი" Count="8839" />
+      <Chain Word="ა" Count="6972" />
+      <Chain Word="რ" Count="3737" />
+      <Chain Word="." Count="503" />
+      <Chain Word="უ" Count="2422" />
+      <Chain Word="ს" Count="724" />
+      <Chain Word="ო" Count="5083" />
+      <Chain Word="ფ" Count="62" />
+      <Chain Word="ვ" Count="763" />
+      <Chain Word="ზ" Count="198" />
+      <Chain Word="ჩ" Count="61" />
+      <Chain Word="მ" Count="414" />
+      <Chain Word="ლ" Count="437" />
+      <Chain Word="ყ" Count="2120" />
+      <Chain Word="შ" Count="212" />
+      <Chain Word="ნ" Count="276" />
+      <Chain Word="პ" Count="12" />
+      <Chain Word="კ" Count="908" />
+      <Chain Word="თ" Count="226" />
+      <Chain Word="ჰ" Count="30" />
+      <Chain Word="ჟ" Count="2" />
+      <Chain Word="ც" Count="18" />
+      <Chain Word="-" Count="125" />
+      <Chain Word="ბ" Count="128" />
+      <Chain Word="გ" Count="30" />
+      <Chain Word="ქ" Count="23" />
+      <Chain Word="დ" Count="142" />
+      <Chain Word="წ" Count="9" />
+      <Chain Word="ხ" Count="17" />
+      <Chain Word="ჯ" Count="9" />
+      <Chain Word="ტ" Count="11" />
+      <Chain Word="ძ" Count="2" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ე" FullCount="227775">
+    <NextChains>
+      <Chain Word="ბ" Count="68484" />
+      <Chain Word="ი" Count="2855" />
+      <Chain Word="გ" Count="2909" />
+      <Chain Word="დ" Count="6976" />
+      <Chain Word="ნ" Count="20861" />
+      <Chain Word="ს" Count="12602" />
+      <Chain Word="." Count="14469" />
+      <Chain Word="რ" Count="17809" />
+      <Chain Word="ლ" Count="17983" />
+      <Chain Word="მ" Count="8326" />
+      <Chain Word="შ" Count="1962" />
+      <Chain Word="ო" Count="2662" />
+      <Chain Word="ვ" Count="8690" />
+      <Chain Word="ც" Count="2473" />
+      <Chain Word="ქ" Count="2772" />
+      <Chain Word="კ" Count="2676" />
+      <Chain Word="ტ" Count="4797" />
+      <Chain Word="თ" Count="8197" />
+      <Chain Word="ა" Count="2031" />
+      <Chain Word="უ" Count="3116" />
+      <Chain Word="წ" Count="1249" />
+      <Chain Word="ყ" Count="802" />
+      <Chain Word="ზ" Count="1531" />
+      <Chain Word="ჟ" Count="116" />
+      <Chain Word="ხ" Count="2463" />
+      <Chain Word="ე" Count="2067" />
+      <Chain Word="პ" Count="1127" />
+      <Chain Word="ჭ" Count="823" />
+      <Chain Word="ჯ" Count="608" />
+      <Chain Word="ჩ" Count="583" />
+      <Chain Word="-" Count="1010" />
+      <Chain Word="ფ" Count="1386" />
+      <Chain Word="ძ" Count="595" />
+      <Chain Word="ჰ" Count="291" />
+      <Chain Word="ღ" Count="474" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ბ" FullCount="105700">
+    <NextChains>
+      <Chain Word="ი" Count="31029" />
+      <Chain Word="ა" Count="20301" />
+      <Chain Word="უ" Count="8245" />
+      <Chain Word="ო" Count="7483" />
+      <Chain Word="ლ" Count="2782" />
+      <Chain Word="ს" Count="7103" />
+      <Chain Word="ე" Count="9141" />
+      <Chain Word="რ" Count="4123" />
+      <Chain Word="ზ" Count="1407" />
+      <Chain Word="შ" Count="1348" />
+      <Chain Word="თ" Count="2425" />
+      <Chain Word="." Count="2061" />
+      <Chain Word="ჭ" Count="57" />
+      <Chain Word="დ" Count="5304" />
+      <Chain Word="ნ" Count="817" />
+      <Chain Word="მ" Count="1164" />
+      <Chain Word="ვ" Count="77" />
+      <Chain Word="გ" Count="93" />
+      <Chain Word="-" Count="234" />
+      <Chain Word="ჰ" Count="14" />
+      <Chain Word="ჯ" Count="76" />
+      <Chain Word="ღ" Count="146" />
+      <Chain Word="ჟ" Count="20" />
+      <Chain Word="ტ" Count="17" />
+      <Chain Word="ხ" Count="15" />
+      <Chain Word="ყ" Count="3" />
+      <Chain Word="პ" Count="7" />
+      <Chain Word="ქ" Count="29" />
+      <Chain Word="კ" Count="16" />
+      <Chain Word="ძ" Count="106" />
+      <Chain Word="წ" Count="7" />
+      <Chain Word="ბ" Count="11" />
+      <Chain Word="ჩ" Count="22" />
+      <Chain Word="ც" Count="14" />
+      <Chain Word="ფ" Count="3" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ნ" FullCount="115245">
+    <NextChains>
+      <Chain Word="გ" Count="2094" />
+      <Chain Word="ა" Count="20012" />
+      <Chain Word="დ" Count="5963" />
+      <Chain Word="." Count="19281" />
+      <Chain Word="ი" Count="19779" />
+      <Chain Word="ლ" Count="236" />
+      <Chain Word="ე" Count="21099" />
+      <Chain Word="თ" Count="1564" />
+      <Chain Word="ფ" Count="309" />
+      <Chain Word="ო" Count="6831" />
+      <Chain Word="მ" Count="1100" />
+      <Chain Word="ტ" Count="3881" />
+      <Chain Word="ც" Count="846" />
+      <Chain Word="შ" Count="533" />
+      <Chain Word="ზ" Count="625" />
+      <Chain Word="ხ" Count="368" />
+      <Chain Word="უ" Count="1480" />
+      <Chain Word="ს" Count="3227" />
+      <Chain Word="ყ" Count="72" />
+      <Chain Word="კ" Count="979" />
+      <Chain Word="ჩ" Count="317" />
+      <Chain Word="ვ" Count="980" />
+      <Chain Word="ძ" Count="640" />
+      <Chain Word="-" Count="517" />
+      <Chain Word="ჯ" Count="881" />
+      <Chain Word="ქ" Count="386" />
+      <Chain Word="წ" Count="311" />
+      <Chain Word="რ" Count="173" />
+      <Chain Word="ჰ" Count="87" />
+      <Chain Word="ჭ" Count="188" />
+      <Chain Word="ჟ" Count="97" />
+      <Chain Word="ბ" Count="209" />
+      <Chain Word="პ" Count="31" />
+      <Chain Word="ღ" Count="52" />
+      <Chain Word="ნ" Count="97" />
+    </NextChains>
+  </Chain>
+  <Chain Word="გ" FullCount="66982">
+    <NextChains>
+      <Chain Word="ი" Count="5927" />
+      <Chain Word="ე" Count="6090" />
+      <Chain Word="შ" Count="128" />
+      <Chain Word="ვ" Count="4605" />
+      <Chain Word="უ" Count="2924" />
+      <Chain Word="ა" Count="34433" />
+      <Chain Word="ნ" Count="764" />
+      <Chain Word="რ" Count="3042" />
+      <Chain Word="ლ" Count="970" />
+      <Chain Word="მ" Count="812" />
+      <Chain Word="ზ" Count="1144" />
+      <Chain Word="დ" Count="860" />
+      <Chain Word="თ" Count="170" />
+      <Chain Word="." Count="240" />
+      <Chain Word="ო" Count="3343" />
+      <Chain Word="ს" Count="279" />
+      <Chain Word="ბ" Count="101" />
+      <Chain Word="ჭ" Count="58" />
+      <Chain Word="ტ" Count="96" />
+      <Chain Word="ჯ" Count="20" />
+      <Chain Word="ძ" Count="75" />
+      <Chain Word="ფ" Count="25" />
+      <Chain Word="წ" Count="116" />
+      <Chain Word="ც" Count="139" />
+      <Chain Word="კ" Count="116" />
+      <Chain Word="ჩ" Count="26" />
+      <Chain Word="ქ" Count="51" />
+      <Chain Word="ხ" Count="143" />
+      <Chain Word="ყ" Count="122" />
+      <Chain Word="პ" Count="36" />
+      <Chain Word="-" Count="62" />
+      <Chain Word="ღ" Count="19" />
+      <Chain Word="ჰ" Count="19" />
+      <Chain Word="გ" Count="27" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ფ" FullCount="18894">
+    <NextChains>
+      <Chain Word="ო" Count="2064" />
+      <Chain Word="ი" Count="3693" />
+      <Chain Word="რ" Count="2069" />
+      <Chain Word="ლ" Count="1332" />
+      <Chain Word="ა" Count="3232" />
+      <Chain Word="ე" Count="3530" />
+      <Chain Word="ს" Count="395" />
+      <Chain Word="უ" Count="953" />
+      <Chain Word="ტ" Count="102" />
+      <Chain Word="ხ" Count="383" />
+      <Chain Word="ნ" Count="141" />
+      <Chain Word="შ" Count="151" />
+      <Chain Word="." Count="114" />
+      <Chain Word="ვ" Count="49" />
+      <Chain Word="მ" Count="47" />
+      <Chain Word="თ" Count="271" />
+      <Chain Word="ც" Count="29" />
+      <Chain Word="ჰ" Count="3" />
+      <Chain Word="ჩ" Count="7" />
+      <Chain Word="ზ" Count="25" />
+      <Chain Word="გ" Count="7" />
+      <Chain Word="კ" Count="18" />
+      <Chain Word="ბ" Count="3" />
+      <Chain Word="ქ" Count="72" />
+      <Chain Word="დ" Count="146" />
+      <Chain Word="-" Count="33" />
+      <Chain Word="ჯ" Count="5" />
+      <Chain Word="ძ" Count="1" />
+      <Chain Word="ფ" Count="9" />
+      <Chain Word="წ" Count="3" />
+      <Chain Word="პ" Count="7" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ო" FullCount="128905">
+    <NextChains>
+      <Chain Word="ს" Count="9151" />
+      <Chain Word="ლ" Count="5276" />
+      <Chain Word="დ" Count="10209" />
+      <Chain Word="თ" Count="4334" />
+      <Chain Word="ვ" Count="7479" />
+      <Chain Word="." Count="15357" />
+      <Chain Word="მ" Count="7967" />
+      <Chain Word="რ" Count="9652" />
+      <Chain Word="ნ" Count="9827" />
+      <Chain Word="პ" Count="1106" />
+      <Chain Word="ი" Count="2627" />
+      <Chain Word="უ" Count="1860" />
+      <Chain Word="გ" Count="4176" />
+      <Chain Word="ზ" Count="1118" />
+      <Chain Word="ბ" Count="14920" />
+      <Chain Word="ფ" Count="2395" />
+      <Chain Word="ც" Count="2611" />
+      <Chain Word="ა" Count="1938" />
+      <Chain Word="ე" Count="3465" />
+      <Chain Word="ტ" Count="2091" />
+      <Chain Word="კ" Count="2055" />
+      <Chain Word="წ" Count="1041" />
+      <Chain Word="ყ" Count="681" />
+      <Chain Word="ჯ" Count="308" />
+      <Chain Word="ო" Count="523" />
+      <Chain Word="ხ" Count="1432" />
+      <Chain Word="ქ" Count="1207" />
+      <Chain Word="ღ" Count="325" />
+      <Chain Word="შ" Count="1058" />
+      <Chain Word="ჩ" Count="473" />
+      <Chain Word="ძ" Count="536" />
+      <Chain Word="ჰ" Count="519" />
+      <Chain Word="ჭ" Count="333" />
+      <Chain Word="-" Count="786" />
+      <Chain Word="ჟ" Count="69" />
+    </NextChains>
+  </Chain>
+  <Chain Word="კ" FullCount="37997">
+    <NextChains>
+      <Chain Word="ი" Count="5473" />
+      <Chain Word="ო" Count="5226" />
+      <Chain Word="ა" Count="8643" />
+      <Chain Word="." Count="210" />
+      <Chain Word="ლ" Count="2125" />
+      <Chain Word="რ" Count="2524" />
+      <Chain Word="უ" Count="2876" />
+      <Chain Word="ე" Count="5189" />
+      <Chain Word="ვ" Count="3373" />
+      <Chain Word="დ" Count="207" />
+      <Chain Word="ნ" Count="334" />
+      <Chain Word="ს" Count="356" />
+      <Chain Word="მ" Count="528" />
+      <Chain Word="ზ" Count="77" />
+      <Chain Word="შ" Count="110" />
+      <Chain Word="ბ" Count="364" />
+      <Chain Word="ტ" Count="77" />
+      <Chain Word="გ" Count="23" />
+      <Chain Word="ფ" Count="20" />
+      <Chain Word="თ" Count="87" />
+      <Chain Word="-" Count="83" />
+      <Chain Word="ჰ" Count="14" />
+      <Chain Word="ქ" Count="6" />
+      <Chain Word="წ" Count="9" />
+      <Chain Word="ც" Count="10" />
+      <Chain Word="პ" Count="18" />
+      <Chain Word="კ" Count="14" />
+      <Chain Word="ჭ" Count="12" />
+      <Chain Word="ყ" Count="1" />
+      <Chain Word="ჯ" Count="4" />
+      <Chain Word="ძ" Count="1" />
+      <Chain Word="ჩ" Count="1" />
+      <Chain Word="ხ" Count="2" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ხ" FullCount="35901">
+    <NextChains>
+      <Chain Word="ვ" Count="4080" />
+      <Chain Word="ი" Count="3295" />
+      <Chain Word="ო" Count="2878" />
+      <Chain Word="მ" Count="1667" />
+      <Chain Word="ე" Count="6899" />
+      <Chain Word="ა" Count="6486" />
+      <Chain Word="შ" Count="356" />
+      <Chain Word="ლ" Count="2221" />
+      <Chain Word="ს" Count="1344" />
+      <Chain Word="რ" Count="1402" />
+      <Chain Word="უ" Count="2392" />
+      <Chain Word="დ" Count="1195" />
+      <Chain Word="ბ" Count="76" />
+      <Chain Word="ყ" Count="30" />
+      <Chain Word="ტ" Count="354" />
+      <Chain Word="." Count="160" />
+      <Chain Word="ნ" Count="494" />
+      <Chain Word="ზ" Count="115" />
+      <Chain Word="თ" Count="139" />
+      <Chain Word="ჯ" Count="3" />
+      <Chain Word="კ" Count="23" />
+      <Chain Word="გ" Count="14" />
+      <Chain Word="ქ" Count="4" />
+      <Chain Word="წ" Count="22" />
+      <Chain Word="ც" Count="48" />
+      <Chain Word="პ" Count="18" />
+      <Chain Word="ჩ" Count="60" />
+      <Chain Word="-" Count="86" />
+      <Chain Word="ჰ" Count="13" />
+      <Chain Word="ჭ" Count="18" />
+      <Chain Word="ფ" Count="7" />
+      <Chain Word="ძ" Count="1" />
+      <Chain Word="ხ" Count="1" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ვ" FullCount="98081">
+    <NextChains>
+      <Chain Word="ა" Count="20573" />
+      <Chain Word="ი" Count="25496" />
+      <Chain Word="ე" Count="19489" />
+      <Chain Word="რ" Count="4162" />
+      <Chain Word="კ" Count="447" />
+      <Chain Word="ტ" Count="667" />
+      <Chain Word="ნ" Count="3399" />
+      <Chain Word="დ" Count="4558" />
+      <Chain Word="ს" Count="3437" />
+      <Chain Word="თ" Count="1524" />
+      <Chain Word="ლ" Count="4529" />
+      <Chain Word="შ" Count="666" />
+      <Chain Word="ო" Count="1206" />
+      <Chain Word="ღ" Count="98" />
+      <Chain Word="." Count="1651" />
+      <Chain Word="ჭ" Count="130" />
+      <Chain Word="წ" Count="369" />
+      <Chain Word="გ" Count="305" />
+      <Chain Word="ხ" Count="498" />
+      <Chain Word="ქ" Count="152" />
+      <Chain Word="მ" Count="634" />
+      <Chain Word="უ" Count="1597" />
+      <Chain Word="ჟ" Count="13" />
+      <Chain Word="ყ" Count="361" />
+      <Chain Word="ზ" Count="405" />
+      <Chain Word="ც" Count="372" />
+      <Chain Word="ჯ" Count="77" />
+      <Chain Word="პ" Count="62" />
+      <Chain Word="ბ" Count="269" />
+      <Chain Word="ფ" Count="168" />
+      <Chain Word="-" Count="276" />
+      <Chain Word="ჩ" Count="152" />
+      <Chain Word="ძ" Count="149" />
+      <Chain Word="ვ" Count="50" />
+      <Chain Word="ჰ" Count="140" />
+    </NextChains>
+  </Chain>
+  <Chain Word="-" FullCount="10149">
+    <NextChains>
+      <Chain Word="პ" Count="212" />
+      <Chain Word="ბ" Count="442" />
+      <Chain Word="ს" Count="602" />
+      <Chain Word="ზ" Count="102" />
+      <Chain Word="ი" Count="212" />
+      <Chain Word="კ" Count="371" />
+      <Chain Word="რ" Count="462" />
+      <Chain Word="." Count="74" />
+      <Chain Word="მ" Count="1892" />
+      <Chain Word="ჰ" Count="97" />
+      <Chain Word="გ" Count="456" />
+      <Chain Word="ლ" Count="480" />
+      <Chain Word="ჯ" Count="73" />
+      <Chain Word="ვ" Count="369" />
+      <Chain Word="ც" Count="182" />
+      <Chain Word="ფ" Count="189" />
+      <Chain Word="შ" Count="216" />
+      <Chain Word="ო" Count="132" />
+      <Chain Word="დ" Count="701" />
+      <Chain Word="ე" Count="155" />
+      <Chain Word="ჭ" Count="35" />
+      <Chain Word="ა" Count="300" />
+      <Chain Word="ქ" Count="147" />
+      <Chain Word="ჩ" Count="122" />
+      <Chain Word="ნ" Count="451" />
+      <Chain Word="ღ" Count="142" />
+      <Chain Word="თ" Count="302" />
+      <Chain Word="ტ" Count="197" />
+      <Chain Word="ხ" Count="195" />
+      <Chain Word="ყ" Count="128" />
+      <Chain Word="უ" Count="331" />
+      <Chain Word="ჟ" Count="27" />
+      <Chain Word="-" Count="95" />
+      <Chain Word="ძ" Count="83" />
+      <Chain Word="წ" Count="175" />
+    </NextChains>
+  </Chain>
+  <Chain Word="პ" FullCount="16148">
+    <NextChains>
+      <Chain Word="ა" Count="4298" />
+      <Chain Word="რ" Count="1804" />
+      <Chain Word="ო" Count="2337" />
+      <Chain Word="ი" Count="3257" />
+      <Chain Word="უ" Count="610" />
+      <Chain Word="ე" Count="2041" />
+      <Chain Word="ლ" Count="602" />
+      <Chain Word="ს" Count="142" />
+      <Chain Word="ტ" Count="253" />
+      <Chain Word="ყ" Count="308" />
+      <Chain Word="." Count="77" />
+      <Chain Word="ვ" Count="53" />
+      <Chain Word="კ" Count="57" />
+      <Chain Word="ნ" Count="91" />
+      <Chain Word="შ" Count="31" />
+      <Chain Word="თ" Count="24" />
+      <Chain Word="-" Count="20" />
+      <Chain Word="მ" Count="37" />
+      <Chain Word="ზ" Count="27" />
+      <Chain Word="ბ" Count="8" />
+      <Chain Word="ჟ" Count="1" />
+      <Chain Word="ფ" Count="5" />
+      <Chain Word="გ" Count="10" />
+      <Chain Word="ც" Count="11" />
+      <Chain Word="დ" Count="20" />
+      <Chain Word="ჩ" Count="1" />
+      <Chain Word="ქ" Count="6" />
+      <Chain Word="წ" Count="15" />
+      <Chain Word="პ" Count="1" />
+      <Chain Word="ჯ" Count="1" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ც" FullCount="31962">
+    <NextChains>
+      <Chain Word="ი" Count="5843" />
+      <Chain Word="ე" Count="4052" />
+      <Chain Word="." Count="8128" />
+      <Chain Word="ხ" Count="3255" />
+      <Chain Word="ნ" Count="1288" />
+      <Chain Word="ვ" Count="1534" />
+      <Chain Word="უ" Count="708" />
+      <Chain Word="ო" Count="1460" />
+      <Chain Word="ა" Count="2679" />
+      <Chain Word="რ" Count="474" />
+      <Chain Word="დ" Count="1193" />
+      <Chain Word="მ" Count="282" />
+      <Chain Word="ბ" Count="62" />
+      <Chain Word="ლ" Count="243" />
+      <Chain Word="ს" Count="117" />
+      <Chain Word="ჯ" Count="5" />
+      <Chain Word="კ" Count="40" />
+      <Chain Word="შ" Count="37" />
+      <Chain Word="ქ" Count="246" />
+      <Chain Word="ზ" Count="32" />
+      <Chain Word="-" Count="75" />
+      <Chain Word="ჰ" Count="13" />
+      <Chain Word="თ" Count="137" />
+      <Chain Word="ტ" Count="9" />
+      <Chain Word="პ" Count="9" />
+      <Chain Word="ძ" Count="2" />
+      <Chain Word="წ" Count="4" />
+      <Chain Word="გ" Count="23" />
+      <Chain Word="ფ" Count="8" />
+      <Chain Word="ღ" Count="1" />
+      <Chain Word="ც" Count="1" />
+      <Chain Word="ყ" Count="2" />
+    </NextChains>
+  </Chain>
+  <Chain Word="დ" FullCount="104914">
+    <NextChains>
+      <Chain Word="ა" Count="45014" />
+      <Chain Word="გ" Count="2646" />
+      <Chain Word="ი" Count="13233" />
+      <Chain Word="ე" Count="17709" />
+      <Chain Word="." Count="8143" />
+      <Chain Word="ვ" Count="1013" />
+      <Chain Word="ღ" Count="514" />
+      <Chain Word="უ" Count="2214" />
+      <Chain Word="რ" Count="2161" />
+      <Chain Word="ო" Count="4345" />
+      <Chain Word="ზ" Count="154" />
+      <Chain Word="შ" Count="193" />
+      <Chain Word="ნ" Count="4141" />
+      <Chain Word="ხ" Count="40" />
+      <Chain Word="მ" Count="1584" />
+      <Chain Word="ს" Count="511" />
+      <Chain Word="ლ" Count="416" />
+      <Chain Word="კ" Count="64" />
+      <Chain Word="ტ" Count="44" />
+      <Chain Word="-" Count="243" />
+      <Chain Word="წ" Count="13" />
+      <Chain Word="თ" Count="134" />
+      <Chain Word="პ" Count="17" />
+      <Chain Word="ბ" Count="103" />
+      <Chain Word="ფ" Count="27" />
+      <Chain Word="ყ" Count="16" />
+      <Chain Word="ჯ" Count="10" />
+      <Chain Word="ჟ" Count="9" />
+      <Chain Word="ქ" Count="17" />
+      <Chain Word="ჩ" Count="7" />
+      <Chain Word="ძ" Count="7" />
+      <Chain Word="ჰ" Count="35" />
+      <Chain Word="ც" Count="23" />
+      <Chain Word="დ" Count="112" />
+      <Chain Word="ჭ" Count="2" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ღ" FullCount="12672">
+    <NextChains>
+      <Chain Word="დ" Count="174" />
+      <Chain Word="წ" Count="267" />
+      <Chain Word="ე" Count="2228" />
+      <Chain Word="ა" Count="2409" />
+      <Chain Word="ი" Count="1077" />
+      <Chain Word="ო" Count="786" />
+      <Chain Word="მ" Count="983" />
+      <Chain Word="ლ" Count="583" />
+      <Chain Word="ზ" Count="57" />
+      <Chain Word="ვ" Count="2196" />
+      <Chain Word="ნ" Count="148" />
+      <Chain Word="რ" Count="511" />
+      <Chain Word="უ" Count="622" />
+      <Chain Word="ბ" Count="77" />
+      <Chain Word="შ" Count="39" />
+      <Chain Word="კ" Count="18" />
+      <Chain Word="ჭ" Count="18" />
+      <Chain Word="ს" Count="167" />
+      <Chain Word="თ" Count="42" />
+      <Chain Word="ძ" Count="21" />
+      <Chain Word="ტ" Count="41" />
+      <Chain Word="გ" Count="61" />
+      <Chain Word="." Count="37" />
+      <Chain Word="ფ" Count="25" />
+      <Chain Word="ქ" Count="16" />
+      <Chain Word="ჩ" Count="12" />
+      <Chain Word="-" Count="38" />
+      <Chain Word="ღ" Count="1" />
+      <Chain Word="პ" Count="7" />
+      <Chain Word="ყ" Count="6" />
+      <Chain Word="ჰ" Count="2" />
+      <Chain Word="ჯ" Count="1" />
+      <Chain Word="ხ" Count="2" />
+    </NextChains>
+  </Chain>
+  <Chain Word="შ" FullCount="35636">
+    <NextChains>
+      <Chain Word="ი" Count="9450" />
+      <Chain Word="ე" Count="13595" />
+      <Chain Word="უ" Count="963" />
+      <Chain Word="ო" Count="1593" />
+      <Chain Word="ა" Count="2475" />
+      <Chain Word="ვ" Count="3563" />
+      <Chain Word="ტ" Count="461" />
+      <Chain Word="ნ" Count="565" />
+      <Chain Word="ზ" Count="22" />
+      <Chain Word="კ" Count="211" />
+      <Chain Word="გ" Count="25" />
+      <Chain Word="ს" Count="113" />
+      <Chain Word="რ" Count="486" />
+      <Chain Word="ხ" Count="240" />
+      <Chain Word="დ" Count="41" />
+      <Chain Word="თ" Count="293" />
+      <Chain Word="ფ" Count="174" />
+      <Chain Word="მ" Count="334" />
+      <Chain Word="." Count="174" />
+      <Chain Word="ლ" Count="571" />
+      <Chain Word="პ" Count="78" />
+      <Chain Word="წ" Count="4" />
+      <Chain Word="ბ" Count="11" />
+      <Chain Word="ქ" Count="98" />
+      <Chain Word="-" Count="55" />
+      <Chain Word="ჩ" Count="12" />
+      <Chain Word="ჭ" Count="3" />
+      <Chain Word="ც" Count="3" />
+      <Chain Word="ყ" Count="3" />
+      <Chain Word="შ" Count="17" />
+      <Chain Word="ჰ" Count="1" />
+      <Chain Word="ჯ" Count="1" />
+      <Chain Word="ძ" Count="1" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ძ" FullCount="10745">
+    <NextChains>
+      <Chain Word="ლ" Count="1090" />
+      <Chain Word="ი" Count="1666" />
+      <Chain Word="ე" Count="2177" />
+      <Chain Word="რ" Count="628" />
+      <Chain Word="ო" Count="443" />
+      <Chain Word="ა" Count="2044" />
+      <Chain Word="ღ" Count="549" />
+      <Chain Word="ნ" Count="583" />
+      <Chain Word="უ" Count="508" />
+      <Chain Word="ვ" Count="601" />
+      <Chain Word="გ" Count="122" />
+      <Chain Word="მ" Count="235" />
+      <Chain Word="თ" Count="15" />
+      <Chain Word="შ" Count="3" />
+      <Chain Word="." Count="21" />
+      <Chain Word="ზ" Count="11" />
+      <Chain Word="ხ" Count="2" />
+      <Chain Word="დ" Count="5" />
+      <Chain Word="-" Count="14" />
+      <Chain Word="ს" Count="24" />
+      <Chain Word="კ" Count="2" />
+      <Chain Word="წ" Count="1" />
+      <Chain Word="ბ" Count="1" />
+    </NextChains>
+  </Chain>
+  <Chain Word="მ" FullCount="119199">
+    <NextChains>
+      <Chain Word="ი" Count="16151" />
+      <Chain Word="დ" Count="3269" />
+      <Chain Word="ო" Count="30642" />
+      <Chain Word="ხ" Count="1791" />
+      <Chain Word="ა" Count="25174" />
+      <Chain Word="რ" Count="1456" />
+      <Chain Word="ე" Count="14266" />
+      <Chain Word="ს" Count="2348" />
+      <Chain Word="ბ" Count="1250" />
+      <Chain Word="." Count="3160" />
+      <Chain Word="ნ" Count="934" />
+      <Chain Word="უ" Count="3435" />
+      <Chain Word="გ" Count="740" />
+      <Chain Word="პ" Count="941" />
+      <Chain Word="თ" Count="1374" />
+      <Chain Word="ზ" Count="1046" />
+      <Chain Word="ქ" Count="271" />
+      <Chain Word="ც" Count="1228" />
+      <Chain Word="კ" Count="1302" />
+      <Chain Word="შ" Count="1132" />
+      <Chain Word="ფ" Count="411" />
+      <Chain Word="ლ" Count="785" />
+      <Chain Word="ღ" Count="540" />
+      <Chain Word="ყ" Count="802" />
+      <Chain Word="წ" Count="1491" />
+      <Chain Word="ტ" Count="974" />
+      <Chain Word="ჭ" Count="395" />
+      <Chain Word="ძ" Count="677" />
+      <Chain Word="ჯ" Count="260" />
+      <Chain Word="ვ" Count="174" />
+      <Chain Word="ჟ" Count="194" />
+      <Chain Word="ჩ" Count="232" />
+      <Chain Word="-" Count="194" />
+      <Chain Word="მ" Count="150" />
+      <Chain Word="ჰ" Count="10" />
+    </NextChains>
+  </Chain>
+  <Chain Word="წ" FullCount="21562">
+    <NextChains>
+      <Chain Word="ე" Count="2745" />
+      <Chain Word="რ" Count="748" />
+      <Chain Word="მ" Count="821" />
+      <Chain Word="ვ" Count="2123" />
+      <Chain Word="ყ" Count="3673" />
+      <Chain Word="ი" Count="2780" />
+      <Chain Word="უ" Count="934" />
+      <Chain Word="ა" Count="5475" />
+      <Chain Word="ლ" Count="226" />
+      <Chain Word="ო" Count="1376" />
+      <Chain Word="ნ" Count="156" />
+      <Chain Word="ტ" Count="6" />
+      <Chain Word="ფ" Count="3" />
+      <Chain Word="კ" Count="278" />
+      <Chain Word="თ" Count="10" />
+      <Chain Word="დ" Count="53" />
+      <Chain Word="." Count="26" />
+      <Chain Word="ბ" Count="35" />
+      <Chain Word="ღ" Count="3" />
+      <Chain Word="-" Count="38" />
+      <Chain Word="ქ" Count="15" />
+      <Chain Word="პ" Count="6" />
+      <Chain Word="ს" Count="19" />
+      <Chain Word="გ" Count="2" />
+      <Chain Word="ც" Count="4" />
+      <Chain Word="ჯ" Count="3" />
+      <Chain Word="ძ" Count="1" />
+      <Chain Word="შ" Count="2" />
+      <Chain Word="წ" Count="1" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ჰ" FullCount="5118">
+    <NextChains>
+      <Chain Word="ი" Count="354" />
+      <Chain Word="ე" Count="534" />
+      <Chain Word="ა" Count="703" />
+      <Chain Word="ქ" Count="187" />
+      <Chain Word="ო" Count="500" />
+      <Chain Word="უ" Count="105" />
+      <Chain Word="გ" Count="142" />
+      <Chain Word="ყ" Count="567" />
+      <Chain Word="." Count="33" />
+      <Chain Word="ფ" Count="126" />
+      <Chain Word="კ" Count="556" />
+      <Chain Word="ვ" Count="32" />
+      <Chain Word="რ" Count="90" />
+      <Chain Word="მ" Count="130" />
+      <Chain Word="ლ" Count="42" />
+      <Chain Word="-" Count="25" />
+      <Chain Word="ღ" Count="49" />
+      <Chain Word="ს" Count="392" />
+      <Chain Word="ბ" Count="104" />
+      <Chain Word="თ" Count="21" />
+      <Chain Word="შ" Count="48" />
+      <Chain Word="ზ" Count="24" />
+      <Chain Word="ხ" Count="170" />
+      <Chain Word="ნ" Count="54" />
+      <Chain Word="ჩ" Count="7" />
+      <Chain Word="პ" Count="75" />
+      <Chain Word="ტ" Count="10" />
+      <Chain Word="ჰ" Count="2" />
+      <Chain Word="წ" Count="6" />
+      <Chain Word="ჯ" Count="10" />
+      <Chain Word="დ" Count="5" />
+      <Chain Word="ც" Count="9" />
+      <Chain Word="ძ" Count="4" />
+      <Chain Word="ჭ" Count="2" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ჟ" FullCount="2404">
+    <NextChains>
+      <Chain Word="უ" Count="199" />
+      <Chain Word="ე" Count="413" />
+      <Chain Word="ი" Count="543" />
+      <Chain Word="ო" Count="179" />
+      <Chain Word="ღ" Count="229" />
+      <Chain Word="ნ" Count="12" />
+      <Chain Word="დ" Count="33" />
+      <Chain Word="ა" Count="448" />
+      <Chain Word="მ" Count="21" />
+      <Chain Word="ს" Count="39" />
+      <Chain Word="ვ" Count="37" />
+      <Chain Word="." Count="15" />
+      <Chain Word="კ" Count="63" />
+      <Chain Word="რ" Count="74" />
+      <Chain Word="ზ" Count="17" />
+      <Chain Word="ლ" Count="29" />
+      <Chain Word="თ" Count="15" />
+      <Chain Word="შ" Count="14" />
+      <Chain Word="ბ" Count="17" />
+      <Chain Word="-" Count="5" />
+      <Chain Word="გ" Count="2" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ზ" FullCount="20825">
+    <NextChains>
+      <Chain Word="ი" Count="2704" />
+      <Chain Word="ე" Count="8683" />
+      <Chain Word="ნ" Count="473" />
+      <Chain Word="ა" Count="3492" />
+      <Chain Word="ო" Count="1282" />
+      <Chain Word="რ" Count="1105" />
+      <Chain Word="უ" Count="537" />
+      <Chain Word="." Count="119" />
+      <Chain Word="ღ" Count="750" />
+      <Chain Word="მ" Count="798" />
+      <Chain Word="ვ" Count="249" />
+      <Chain Word="ბ" Count="32" />
+      <Chain Word="ლ" Count="113" />
+      <Chain Word="შ" Count="37" />
+      <Chain Word="ს" Count="119" />
+      <Chain Word="თ" Count="41" />
+      <Chain Word="-" Count="29" />
+      <Chain Word="ქ" Count="5" />
+      <Chain Word="გ" Count="62" />
+      <Chain Word="დ" Count="150" />
+      <Chain Word="ტ" Count="5" />
+      <Chain Word="ზ" Count="19" />
+      <Chain Word="კ" Count="12" />
+      <Chain Word="ც" Count="1" />
+      <Chain Word="ჭ" Count="2" />
+      <Chain Word="ხ" Count="1" />
+      <Chain Word="ფ" Count="1" />
+      <Chain Word="წ" Count="2" />
+      <Chain Word="ყ" Count="2" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ყ" FullCount="18071">
+    <NextChains>
+      <Chain Word="ვ" Count="4353" />
+      <Chain Word="უ" Count="1409" />
+      <Chain Word="ო" Count="3706" />
+      <Chain Word="ე" Count="1914" />
+      <Chain Word="დ" Count="498" />
+      <Chain Word="ი" Count="1293" />
+      <Chain Word="ნ" Count="372" />
+      <Chain Word="რ" Count="1163" />
+      <Chain Word="ა" Count="2389" />
+      <Chain Word="მ" Count="381" />
+      <Chain Word="ლ" Count="392" />
+      <Chain Word="შ" Count="5" />
+      <Chain Word="ბ" Count="88" />
+      <Chain Word="ზ" Count="8" />
+      <Chain Word="თ" Count="6" />
+      <Chain Word="." Count="23" />
+      <Chain Word="ს" Count="28" />
+      <Chain Word="-" Count="25" />
+      <Chain Word="წ" Count="3" />
+      <Chain Word="ხ" Count="2" />
+      <Chain Word="ტ" Count="4" />
+      <Chain Word="კ" Count="1" />
+      <Chain Word="ფ" Count="3" />
+      <Chain Word="ღ" Count="1" />
+      <Chain Word="ჯ" Count="4" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ჯ" FullCount="7283">
+    <NextChains>
+      <Chain Word="ა" Count="1854" />
+      <Chain Word="ზ" Count="20" />
+      <Chain Word="ო" Count="755" />
+      <Chain Word="უ" Count="289" />
+      <Chain Word="ე" Count="1466" />
+      <Chain Word="ვ" Count="430" />
+      <Chain Word="ი" Count="1330" />
+      <Chain Word="ლ" Count="46" />
+      <Chain Word="დ" Count="394" />
+      <Chain Word="რ" Count="137" />
+      <Chain Word="გ" Count="112" />
+      <Chain Word="." Count="59" />
+      <Chain Word="კ" Count="5" />
+      <Chain Word="-" Count="13" />
+      <Chain Word="ღ" Count="56" />
+      <Chain Word="ს" Count="65" />
+      <Chain Word="ნ" Count="133" />
+      <Chain Word="მ" Count="32" />
+      <Chain Word="შ" Count="15" />
+      <Chain Word="თ" Count="26" />
+      <Chain Word="წ" Count="12" />
+      <Chain Word="ხ" Count="3" />
+      <Chain Word="ქ" Count="4" />
+      <Chain Word="ფ" Count="10" />
+      <Chain Word="ბ" Count="4" />
+      <Chain Word="ჰ" Count="6" />
+      <Chain Word="ჯ" Count="1" />
+      <Chain Word="პ" Count="4" />
+      <Chain Word="ყ" Count="1" />
+      <Chain Word="ჭ" Count="1" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ჩ" FullCount="14083">
+    <NextChains>
+      <Chain Word="ვ" Count="909" />
+      <Chain Word="ე" Count="2437" />
+      <Chain Word="ა" Count="5782" />
+      <Chain Word="ი" Count="1708" />
+      <Chain Word="ხ" Count="558" />
+      <Chain Word="უ" Count="662" />
+      <Chain Word="ო" Count="536" />
+      <Chain Word="ნ" Count="464" />
+      <Chain Word="ზ" Count="13" />
+      <Chain Word="ქ" Count="397" />
+      <Chain Word="რ" Count="265" />
+      <Chain Word="ბ" Count="38" />
+      <Chain Word="." Count="31" />
+      <Chain Word="კ" Count="27" />
+      <Chain Word="ჟ" Count="6" />
+      <Chain Word="თ" Count="9" />
+      <Chain Word="შ" Count="11" />
+      <Chain Word="-" Count="18" />
+      <Chain Word="ს" Count="35" />
+      <Chain Word="მ" Count="58" />
+      <Chain Word="ტ" Count="4" />
+      <Chain Word="დ" Count="42" />
+      <Chain Word="ლ" Count="64" />
+      <Chain Word="ღ" Count="1" />
+      <Chain Word="ჰ" Count="1" />
+      <Chain Word="წ" Count="1" />
+      <Chain Word="გ" Count="3" />
+      <Chain Word="ყ" Count="2" />
+      <Chain Word="ც" Count="1" />
+    </NextChains>
+  </Chain>
+  <Chain Word="ჭ" FullCount="6491">
+    <NextChains>
+      <Chain Word="ი" Count="1412" />
+      <Chain Word="ო" Count="259" />
+      <Chain Word="რ" Count="760" />
+      <Chain Word="კ" Count="192" />
+      <Chain Word="ა" Count="993" />
+      <Chain Word="ე" Count="1026" />
+      <Chain Word="დ" Count="317" />
+      <Chain Word="უ" Count="301" />
+      <Chain Word="ს" Count="34" />
+      <Chain Word="ვ" Count="569" />
+      <Chain Word="მ" Count="218" />
+      <Chain Word="ზ" Count="7" />
+      <Chain Word="." Count="17" />
+      <Chain Word="ლ" Count="81" />
+      <Chain Word="ნ" Count="83" />
+      <Chain Word="თ" Count="5" />
+      <Chain Word="შ" Count="8" />
+      <Chain Word="ყ" Count="187" />
+      <Chain Word="ბ" Count="3" />
+      <Chain Word="-" Count="12" />
+      <Chain Word="ღ" Count="2" />
+      <Chain Word="ხ" Count="1" />
+      <Chain Word="ქ" Count="1" />
+      <Chain Word="გ" Count="1" />
+      <Chain Word="პ" Count="1" />
+      <Chain Word="ც" Count="1" />
+    </NextChains>
+  </Chain>
+</Chains>

@@ -57,6 +57,10 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GeorgianLanguageClasses, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GeorgianWordDetector\bin\Debug\netstandard2.0\GeorgianLanguageClasses.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -81,7 +85,6 @@
     <Compile Include="Aggregations\FileScraper.cs" />
     <Compile Include="Aggregations\GerogianTextModelUpdater.cs" />
     <Compile Include="IoExtensions.cs" />
-    <Compile Include="Aggregations\LatinGeoFixer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Aggregations\SpaceRemover.cs" />
@@ -91,18 +94,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GeorgianLanguageClasses\GeorgianLanguageClasses.csproj">
-      <Project>{A7F77740-7B67-43F9-B1D5-F3CBA4644F3D}</Project>
-      <Name>GeorgianLanguageClasses</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GeorgianWordDetector\GeorgianWordDetector.csproj">
-      <Project>{20AE6D79-A985-46A6-8B95-F829D8C009D4}</Project>
-      <Name>GeorgianWordDetector</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LanguageModelAdapter\LanguageModelAdapter.csproj">
-      <Project>{4A4A84F4-BC9B-44AF-AF59-8D49D68BF5F0}</Project>
-      <Name>LanguageModelAdapter</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TextAnalyser\TextAnalyser.csproj">
       <Project>{7900035A-6B9F-4B07-84E0-71B5134406BD}</Project>
       <Name>TextAnalyser</Name>

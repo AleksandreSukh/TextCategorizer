@@ -72,11 +72,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="SyllableSplitterTests.cs" />
-    <Compile Include="GeorgianWordExtensionsTests.cs" />
-    <Compile Include="GeoWordMatcherTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WordModelTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

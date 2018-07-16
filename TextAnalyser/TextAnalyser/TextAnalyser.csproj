@@ -234,10 +234,6 @@
       <Project>{a262cd9c-b487-4a71-8964-d7e5e6d1da1e}</Project>
       <Name>Stemmer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TextMarkovChains\TextMarkovChains\TextMarkovChains.csproj">
-      <Project>{FC6D37A9-A17A-4D22-8FCA-91A9FEF74152}</Project>
-      <Name>TextMarkovChains</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

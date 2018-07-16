@@ -5,7 +5,6 @@ using FileSystemInfo = Pri.LongPath.FileSystemInfo;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using GeorgianWordDetector;
 using Pri.LongPath;
 
 namespace DataAggregator
@@ -16,62 +15,62 @@ namespace DataAggregator
         {
             try
             {
+                return;
+
+                ////new WordsDetector();
+                //string inputDir = @"D:\Aleks\DataRepository\წიგნები1";
+                ////string output;
+
+                ////if (args.Length == 2)
+                ////{
+                ////    inputDir = args[0];
+                ////    output = args[1];
+                ////}
+                ////if (args.Length == 1)
+                ////{
+                ////    inputDir = args[0];
+                ////}
+
+                //var sourceDir = new DirectoryInfo(inputDir);
 
 
-                //new WordsDetector();
-                string inputDir = @"D:\Aleks\DataRepository\წიგნები1";
-                //string output;
+                //var scraped = Path.Combine(sourceDir.Parent.FullName, sourceDir.Name + "_1_scraped");
 
-                //if (args.Length == 2)
-                //{
-                //    inputDir = args[0];
-                //    output = args[1];
-                //}
-                //if (args.Length == 1)
-                //{
-                //    inputDir = args[0];
-                //}
+                //void PdfAndDocScraper() => IoExtensions.AggregateFilesInDirRecursively(sourceDir.FullName, scraped, true, FileScraper.ScrapFile);
 
-                var sourceDir = new DirectoryInfo(inputDir);
+                //var spacesClean = Path.Combine(sourceDir.Parent.FullName, sourceDir.Name + "_2_spaces_rem");
+                //void SpaceRemover() => IoExtensions.AggregateFilesInDirRecursively(scraped, spacesClean, true, DataAggregator.SpaceRemover.CleanUpSpace);
 
+                //var latinToGeoFixed = Path.Combine(sourceDir.Parent.FullName, sourceDir.Name + "_3_fix_lat_chars");
 
-                var scraped = Path.Combine(sourceDir.Parent.FullName, sourceDir.Name + "_1_scraped");
+                //void LatinGeoFixer() => IoExtensions.AggregateFilesInDirRecursively(spacesClean, latinToGeoFixed, true, DataAggregator.LatinGeoFixer.FixLatinCharactersOrJustCopy);
 
-                void PdfAndDocScraper() => IoExtensions.AggregateFilesInDirRecursively(sourceDir.FullName, scraped, true, FileScraper.ScrapFile);
+                //var onlyGeorgian = Path.Combine(sourceDir.Parent.FullName, sourceDir.Name + "_4_only_geo");
 
-                var spacesClean = Path.Combine(sourceDir.Parent.FullName, sourceDir.Name + "_2_spaces_rem");
-                void SpaceRemover() => IoExtensions.AggregateFilesInDirRecursively(scraped, spacesClean, true, DataAggregator.SpaceRemover.CleanUpSpace);
+                //void GeorgianTextFilter() => IoExtensions.AggregateFilesInDirRecursively(latinToGeoFixed, onlyGeorgian, true, DataAggregator.LatinGeoFixer.FilterNonGeorgianTexts);
 
-                var latinToGeoFixed = Path.Combine(sourceDir.Parent.FullName, sourceDir.Name + "_3_fix_lat_chars");
+                //void ModelUpdater() => IoExtensions.AggregateFilesInDirRecursively(onlyGeorgian, onlyGeorgian, true, DataAggregator.GerogianTextModelUpdater.FeedFile);
 
-                void LatinGeoFixer() => IoExtensions.AggregateFilesInDirRecursively(spacesClean, latinToGeoFixed, true, DataAggregator.LatinGeoFixer.FixLatinCharactersOrJustCopy);
-
-                var onlyGeorgian = Path.Combine(sourceDir.Parent.FullName, sourceDir.Name + "_4_only_geo");
-
-                void GeorgianTextFilter() => IoExtensions.AggregateFilesInDirRecursively(latinToGeoFixed, onlyGeorgian, true, DataAggregator.LatinGeoFixer.FilterNonGeorgianTexts);
-
-                void ModelUpdater() => IoExtensions.AggregateFilesInDirRecursively(onlyGeorgian, onlyGeorgian, true, DataAggregator.GerogianTextModelUpdater.FeedFile);
-
-                void ModelCreatorIntoDb => IoExtensions.AggregateFilesInDirRecursively(onlyGeorgian, onlyGeorgian, true, DataAggregator.GerogianTextModelUpdater.FeedFile);
+                ////void ModelCreatorIntoDb => IoExtensions.AggregateFilesInDirRecursively(onlyGeorgian, onlyGeorgian, true, DataAggregator.GerogianTextModelUpdater.FeedFile);
 
 
 
 
-                //PdfAndDocScraper();
+                ////PdfAndDocScraper();
 
-                //SpaceRemover();
+                ////SpaceRemover();
 
-                //LatinGeoFixer();
+                ////LatinGeoFixer();
 
-                //GeorgianTextFilter();
+                ////GeorgianTextFilter();
 
-                //ModelUpdater();
-                var sth = new GerogianTextModelUpdater();
-                //GerogianTextModelUpdater.Save();
+                ////ModelUpdater();
+                //var sth = new GerogianTextModelUpdater();
+                ////GerogianTextModelUpdater.Save();
 
-                //var t3 = RunActionInEvery20Seconds(action);
+                ////var t3 = RunActionInEvery20Seconds(action);
 
-                //Task.WaitAll(t1, t2, t3);
+                ////Task.WaitAll(t1, t2, t3);
             }
             catch (Exception e)
             {
