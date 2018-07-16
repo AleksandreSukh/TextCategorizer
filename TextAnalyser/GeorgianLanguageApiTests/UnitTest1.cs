@@ -15,6 +15,13 @@ namespace GeorgianLanguageApiTests
             con.FixLatinText("iyo da ara iyo ra").ShouldBe("იყო და არა იყო რა");
             con.FixLatinText("salami").ShouldBe("სალამი");
         }
+        [Fact]
+        public void Test11()
+        {
+            var con = new LatinGeoFixer();
+            con.FixLatinText("Gushindeli dge iyo bolo tarigi me ase miyxres da gushin mivitane")
+                   .ShouldBe("გუშინდელი დღე იყო ბოლო თარიღი მე ასე მითხრეს და გუშინ მივიტანე");
+        }
         static WordDetector wd = new WordDetector();
         [Fact]
         public void TestMethod1()
