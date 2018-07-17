@@ -2,7 +2,7 @@
 using Shouldly;
 using Xunit;
 
-namespace GeorgianLanguageClassesTests
+namespace GeorgianLanguageCoreTests
 {
     public class SyllableSplitterTests
     {
